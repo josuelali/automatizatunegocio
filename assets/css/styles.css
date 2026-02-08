@@ -1,0 +1,82 @@
+:root{
+  --bg:#071a2a; --bg2:#0b2338; --text:#121822; --muted:#5a6773;
+  --brand:#0aa0ff; --brand2:#21c58e; --white:#ffffff;
+  --max:1100px; --radius:16px; --shadow:0 10px 30px rgba(0,0,0,.12);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:var(--max);margin:0 auto;padding:0 20px}
+.topbar{background:rgba(7,26,42,.92);backdrop-filter:saturate(180%) blur(8px);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:42px;width:auto}
+.brand .name{color:var(--white);font-weight:800;letter-spacing:.3px}
+.navlinks{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.pill{border:1px solid rgba(255,255,255,.16);color:var(--white);padding:8px 12px;border-radius:999px;font-weight:600}
+.pill.primary{background:linear-gradient(90deg,var(--brand),var(--brand2));border:none}
+.hero{background:radial-gradient(1200px 600px at 20% 10%, rgba(10,160,255,.30), transparent 55%),
+       radial-gradient(900px 500px at 80% 15%, rgba(33,197,142,.25), transparent 60%),
+       linear-gradient(180deg,var(--bg),var(--bg2));color:var(--white)}
+.hero .wrap{padding:54px 0 42px;display:grid;grid-template-columns:1.25fr .75fr;gap:26px;align-items:center}
+.hero h1{margin:0 0 10px;font-size:44px;line-height:1.05;letter-spacing:-.6px}
+.hero p{margin:0 0 18px;color:rgba(255,255,255,.86);font-size:18px;line-height:1.5}
+.kpis{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.kpi{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:10px 12px;min-width:170px}
+.kpi b{display:block;font-size:14px}
+.kpi span{display:block;color:rgba(255,255,255,.78);font-size:13px;margin-top:4px}
+.hero-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:18px;box-shadow:0 20px 50px rgba(0,0,0,.18)}
+.hero-card h3{margin:0 0 10px}
+.hero-card ul{margin:0;padding-left:18px;color:rgba(255,255,255,.88)}
+.hero-card li{margin:8px 0}
+section{padding:42px 0}
+h2{margin:0 0 12px;font-size:30px;letter-spacing:-.2px}
+.sub{color:var(--muted);max-width:78ch;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.card{background:#fff;border:1px solid #e7eef6;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;color:var(--muted);line-height:1.6}
+.card a{display:inline-block;margin-top:10px;color:#0b5bd3;font-weight:700}
+.badge{display:inline-block;background:#eaf7ff;border:1px solid #cfefff;color:#025b9a;font-weight:800;border-radius:999px;padding:6px 10px;font-size:12px}
+.cta{background:linear-gradient(180deg,#ffffff, #f5fbff)}
+.cta .box{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;align-items:center}
+.cta .box .card{box-shadow:0 12px 26px rgba(0,0,0,.08)}
+.footer{border-top:1px solid #e7eef6;padding:18px 0;color:#5b6773;font-size:14px}
+.footer .row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.article{padding:34px 0}
+.article h1{font-size:34px;letter-spacing:-.3px;margin:0 0 12px}
+.article .meta{color:var(--muted);font-size:14px;margin-bottom:16px}
+.toc{background:#f6fbff;border:1px solid #d7efff;border-radius:var(--radius);padding:14px;margin:18px 0}
+.toc a{color:#0b5bd3;font-weight:700}
+.prose{line-height:1.75;color:#121822}
+.prose h2{margin-top:28px}
+.prose h3{margin-top:22px}
+.prose blockquote{border-left:4px solid #cfefff;margin:14px 0;padding:8px 12px;background:#f7fbff}
+.prose ul{margin:10px 0 10px 22px}
+.notice{background:#fff7e6;border:1px solid #ffe1a8;border-radius:14px;padding:12px 14px;color:#6a4b00}
+@media(max-width:920px){
+  .hero .wrap{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .cta .box{grid-template-columns:1fr}
+  .hero h1{font-size:36px}
+}
+
+/* HERO FIX */
+.hero {
+  padding: 4rem 1.5rem;
+}
+.hero-content {
+  max-width: 1100px;
+  margin: auto;
+}
+.hero-ctas {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.hero-ctas .btn {
+  flex: 1;
+  text-align: center;
+}
