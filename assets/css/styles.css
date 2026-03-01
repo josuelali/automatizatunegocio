@@ -80,3 +80,56 @@ h2{margin:0 0 12px;font-size:30px;letter-spacing:-.2px}
   flex: 1;
   text-align: center;
 }
+
+.kit-emprendedores {
+  margin: 80px 0;
+}
+
+.kit-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.kit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.kit-item {
+  background: #f5f8fb;
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.kit-item:hover {
+  transform: translateY(-4px);
+}
+
+.kit-item h3 {
+  margin-bottom: 10px;
+}
+
+.kit-item a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #ff9900;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.kit-item a:hover {
+  opacity: 0.9;
+}
+
+.kit-disclaimer {
+  margin-top: 30px;
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+}
