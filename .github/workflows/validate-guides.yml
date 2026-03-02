@@ -1,0 +1,27 @@
+name: Validate Guides Structure
+
+on:
+  push:
+    paths:
+      - 'guias/**/*.html'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Validate ecosystem block
+        run: |
+          FAIL=0
+          for file in guias/*.html; do
+            if ! grep -q '<section class="ecosystem-box">' "$file"; then
+              echo "Missing ecosystem-box in $file"
+              FAIL=1
+            fi
+          done
+          if [ $FAIL -eq 1 ]; then
+            echo "Build failed due to missing ecosystem block."
+            exit 1
+          fi
