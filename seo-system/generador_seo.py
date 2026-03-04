@@ -1,12 +1,10 @@
 import os
 import random
 
-def generar_contenido(titulo):
+def generar_contenido(titulo, enlaces):
 
     intro = f"""
-<p>{titulo} es un tema cada vez más importante para emprendedores, empresas digitales y profesionales que quieren mejorar su productividad. En esta guía completa explicamos cómo funciona {titulo.lower()}, qué ventajas ofrece y cómo empezar a aplicarlo en proyectos reales.</p>
-
-<p>Durante los últimos años la automatización, el software SaaS y las herramientas de inteligencia artificial han cambiado la forma de trabajar. Hoy es posible automatizar procesos, generar contenido, analizar datos y crear negocios digitales con mucha más facilidad.</p>
+<p>{titulo} es un tema cada vez más importante para emprendedores y empresas que buscan mejorar productividad y automatizar procesos. En esta guía explicamos cómo funciona {titulo.lower()} y cómo aplicarlo en negocios digitales.</p>
 """
 
     secciones = [
@@ -17,7 +15,6 @@ def generar_contenido(titulo):
         "Consejos para empezar",
         "Errores comunes",
         "Estrategias avanzadas",
-        "Casos reales de uso"
     ]
 
     contenido = intro
@@ -26,20 +23,25 @@ def generar_contenido(titulo):
 
         contenido += f"<h2>{seccion} de {titulo}</h2>"
 
-        for i in range(3):
+        for i in range(2):
 
             contenido += f"""
-<p>{titulo} permite mejorar la eficiencia en empresas digitales, automatizar tareas repetitivas y reducir costes operativos. Muchas herramientas modernas utilizan inteligencia artificial para facilitar procesos complejos que antes requerían mucho tiempo o conocimientos técnicos.</p>
+<p>{titulo} permite mejorar la eficiencia en empresas digitales, automatizar tareas repetitivas y optimizar procesos. Muchas herramientas actuales utilizan inteligencia artificial y automatización para facilitar el trabajo diario.</p>
 
-<p>Una estrategia bien diseñada permite aprovechar al máximo {titulo.lower()}, combinando diferentes herramientas digitales, automatización de procesos y optimización de recursos. Esto es especialmente útil para emprendedores que buscan escalar negocios online.</p>
+<p>Implementar {titulo.lower()} correctamente puede ayudar a escalar proyectos online y mejorar la productividad de emprendedores y empresas.</p>
+"""
+
+        if enlaces:
+            enlace = random.choice(enlaces)
+            contenido += f"""
+<p>También puede interesarte esta guía relacionada:
+<a href="/guias/{enlace[0]}">{enlace[1]}</a></p>
 """
 
     contenido += f"""
 <h2>Conclusión</h2>
 
-<p>{titulo} seguirá creciendo durante los próximos años. Las empresas que adopten estas tecnologías podrán trabajar de forma más eficiente, reducir costes y crear nuevos modelos de negocio digitales.</p>
-
-<p>Comprender cómo funciona {titulo.lower()} y aplicarlo correctamente puede marcar la diferencia entre un negocio tradicional y uno altamente automatizado.</p>
+<p>{titulo} seguirá creciendo en los próximos años. Comprender cómo utilizar estas herramientas puede marcar una gran diferencia en negocios digitales.</p>
 """
 
     return contenido
@@ -48,11 +50,18 @@ def generar_contenido(titulo):
 with open("mapa_seo.txt","r",encoding="utf8") as f:
     lineas = f.readlines()
 
+articulos = []
+
 for linea in lineas:
-
     url,titulo = linea.strip().split("|")
+    articulos.append((url,titulo))
 
-    contenido = generar_contenido(titulo)
+
+for url,titulo in articulos:
+
+    enlaces = [a for a in articulos if a[0] != url]
+
+    contenido = generar_contenido(titulo,enlaces)
 
     html = f"""
 <!DOCTYPE html>
@@ -67,7 +76,7 @@ for linea in lineas:
 
 <meta name="description" content="Guía completa sobre {titulo}">
 
-<link rel="canonical" href="https://automatizatunegocio.org/guias/{url}">
+<link rel="canonical" href="/guias/{url}">
 
 </head>
 
