@@ -13,9 +13,9 @@ for linea in lineas:
     html = plantilla.replace("{{TITLE}}",titulo)
     html = html.replace("{{URL}}",url)
 
-    os.makedirs("../"+url,exist_ok=True)
+    os.makedirs("../guias/"+url,exist_ok=True)
 
-    with open("../"+url+"/index.html","w",encoding="utf8") as f:
+    with open("../guias/"+url+"/index.html","w",encoding="utf8") as f:
         f.write(html)
 
 print("Páginas generadas correctamente")
