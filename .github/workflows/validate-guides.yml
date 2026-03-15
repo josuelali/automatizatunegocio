@@ -10,17 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Validate ecosystem block
         run: |
           FAIL=0
-          for file in guias/*.html; do
+
+          while IFS= read -r file; do
             if ! grep -q '<section class="ecosystem-box">' "$file"; then
-              echo "Missing ecosystem-box in $file"
+              echo "❌ Missing ecosystem-box in $file"
               FAIL=1
             fi
-          done
+          done < <(find guias -mindepth 2 -maxdepth 2 -type f -name "index.html")
+
           if [ $FAIL -eq 1 ]; then
             echo "Build failed due to missing ecosystem block."
             exit 1
