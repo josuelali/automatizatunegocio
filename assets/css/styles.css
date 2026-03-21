@@ -1518,3 +1518,180 @@ button{
     width:40px;
   }
 }
+
+/* ===== LEGACY FALLBACK PARA GUIAS ANTIGUAS ===== */
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(112, 0, 255, 0.12), transparent 35%),
+    linear-gradient(90deg, #02040a 0%, #021224 45%, #001a2f 100%);
+  color: #e9eef5;
+}
+
+body > header:not(.site-header),
+body > h1:first-child,
+body > main:not(.site-main),
+.container.article,
+body > .container {
+  max-width: 1120px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+body > header:not(.site-header) {
+  background: linear-gradient(135deg, rgba(110,67,255,.20), rgba(255,60,120,.10));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 24px;
+  padding: 40px;
+  margin-bottom: 32px;
+}
+
+body > header:not(.site-header) h1,
+body > h1:first-child,
+.container.article h1,
+.article h1 {
+  font-size: clamp(2.2rem, 5vw, 4.6rem);
+  line-height: 1.05;
+  margin: 0 0 18px;
+  color: #f7f7fb;
+}
+
+body > main:not(.site-main),
+.container.article,
+.article,
+body > .container {
+  color: #dbe7f5;
+}
+
+body > main:not(.site-main) p,
+.container.article p,
+.article p,
+body > .container p,
+.prose p {
+  font-size: 1.08rem;
+  line-height: 1.9;
+  color: #d5deea;
+}
+
+body > main:not(.site-main) h2,
+.container.article h2,
+.article h2,
+.prose h2 {
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  margin-top: 42px;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+body > main:not(.site-main) h3,
+.container.article h3,
+.article h3,
+.prose h3 {
+  font-size: 1.25rem;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.meta,
+.toc,
+.herramienta-recomendada,
+.ia-tools-box,
+.ecosystem-box,
+.tools-box,
+.info-box,
+blockquote,
+.related-box,
+.related-guides,
+.card,
+.box {
+  background: linear-gradient(180deg, rgba(5,18,34,.88), rgba(3,14,28,.78));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 18px;
+  padding: 22px;
+  margin: 24px 0;
+}
+
+.toc ul,
+.prose ul,
+body > main ul,
+.article ul {
+  padding-left: 22px;
+}
+
+.prose li,
+body > main li,
+.article li {
+  margin-bottom: 10px;
+}
+
+.topbar,
+.navbar,
+header.topbar {
+  background: rgba(3,10,18,.95);
+  border-bottom: 1px solid rgba(255,0,60,.45);
+}
+
+.topbar .container,
+.nav,
+.navbar .container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 14px 24px;
+}
+
+.topbar a,
+.nav a,
+.navbar a {
+  color: #ffffff;
+}
+
+.brand img,
+.site-logo,
+.logo img {
+  max-height: 56px;
+  width: auto;
+}
+
+a.tool-button,
+.herramienta-recomendada a,
+.ia-system-box a,
+body a.system-button,
+body a.btn,
+body a.button,
+body a.cta-button {
+  display: inline-block;
+  background: #b90b0b;
+  color: #fff !important;
+  border: 2px solid #f0a51a;
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  background: rgba(5,18,34,.72);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid rgba(255,255,255,.08);
+  padding: 12px 14px;
+  text-align: left;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(255,255,255,.08);
+  margin: 32px 0;
+}
