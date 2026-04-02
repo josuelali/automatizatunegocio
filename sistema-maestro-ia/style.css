@@ -119,7 +119,7 @@ a{
 .btn-primary{
   background:linear-gradient(180deg, #ff4b25 0%, #d71911 100%);
   border-color:var(--accent-2);
-  color:#fff;
+  color:##04120a;
   box-shadow:0 12px 24px rgba(255,61,31,.22);
 }
 
@@ -132,7 +132,7 @@ a{
 .btn-outline{
   background:transparent;
   border-color:var(--accent-2);
-  color:#fff;
+  color:##04120a;
 }
 
 .btn-full{
