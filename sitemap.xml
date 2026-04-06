@@ -1,417 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://automatizatunegocio.org/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/automatizar-marketing-digital/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/automatizar-negocio-con-ia/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/automatizar-procesos-negocio/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/alternativas-a-mailchimp/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/amazon-programa-afiliados/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizacion-de-marketing-con-ia/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizacion-de-procesos-digitales/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizacion-sin-programar/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-blogs/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-campanas/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-captacion-de-leads-con-ia/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-citas-whatsapp/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-documentos/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-ecommerce/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-email-bienvenida/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-embudos-venta/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-facturacion/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-flujos-de-trabajo-para-pymes/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-flujos-no-code/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-generacion-de-trafico/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-google-sheets/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-lead-magnet/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-marketing-digital/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-negocio-con-ia/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-negocio-online/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-newsletter/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-onboarding/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-procesos-negocio/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-prospeccion/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-redes/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-redes-sociales/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-reportes/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-reputacion/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-retencion/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-segmentacion/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-seguimiento-pagos/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-soporte/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-suscripciones/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-tareas-con-inteligencia-artificial/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-tareas-equipo/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-tareas-repetitivas/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/automatizar-ventas/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/brevo-que-es/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/calendly-alternativas/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/como-crear-web-monetizable-ia/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/como-usar-chatgpt/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/crm-para-pymes/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/email-marketing-automatico/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/embudos-simples/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/formularios-y-leads/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/gadgets-tecnologicos-amazon/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/herramientas-automatizacion-empresas/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/hostinger-programa-afiliados/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/jasper-ai-programa-afiliados/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/mejores-herramientas-de-automatizacion/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/namecheap-programa-afiliados/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/notion-programa-afiliados/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/pictory-programa-afiliados/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/seen-programa-afiliados/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/software-automatizacion-empresarial/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/whatsapp-automatizado/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/guias/writesonic-programa-afiliados/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/herramientas-automatizacion-empresas/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/legal/aviso-legal.html</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/legal/contacto.html</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/legal/privacidad.html</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://automatizatunegocio.org/software-automatizacion-empresarial/</loc>
-<lastmod>2026-03-14</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/automatizar-negocio-con-ia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/automatizar-negocio-online/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/automatizar-captacion-de-clientes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/automatizar-email-marketing/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/automatizar-embudos-de-ventas/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/automatizar-redes-sociales/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/automatizar-ventas/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/crm-para-pymes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/embudos-simples/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/formularios-y-leads/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/mejores-herramientas-de-automatizacion/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/software-para-automatizar-negocios/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/systeme-vs-mailchimp/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/whatsapp-automatizado/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/7-mejores-herramientas-automatizar-negocio/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+  <url>
+    <loc>https://automatizatunegocio.org/guias/mejor-software-automatizacion-pymes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/sistema-maestro-ia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/legal/aviso-legal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/legal/contacto.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/legal/privacidad.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
