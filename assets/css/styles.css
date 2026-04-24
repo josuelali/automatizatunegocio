@@ -952,4 +952,24 @@ h1{
   .btn-principal{
     width:100%;
   }
+
+/* FIX HOME - logos del ecosistema demasiado grandes */
+.ecosystem-card img,
+.asset-card img,
+.project-card img,
+.card img {
+  max-width: 220px;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 16px;
+}
+
+.ecosystem-card,
+.asset-card,
+.project-card,
+.card {
+  overflow: hidden;
 }
