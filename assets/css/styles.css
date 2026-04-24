@@ -979,3 +979,63 @@ h1{
   max-height: 120px;
   object-fit: contain;
 }
+
+/* BLOQUE LIMPIO ECOSISTEMA */
+.ecosystem-clean {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 36px 24px;
+  background: rgba(0, 40, 45, 0.75);
+  border: 1px solid rgba(0, 255, 180, 0.18);
+  border-radius: 24px;
+}
+
+.ecosystem-clean h2 {
+  margin: 0 0 10px;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.ecosystem-clean > p {
+  margin: 0 0 28px;
+  color: #c8f7ff;
+  font-size: 17px;
+}
+
+.ecosystem-clean-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.ecosystem-clean-card {
+  display: block;
+  padding: 24px;
+  border-radius: 18px;
+  background: rgba(0, 10, 18, 0.75);
+  border: 1px solid rgba(0, 255, 180, 0.16);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.ecosystem-clean-card h3 {
+  margin: 0 0 10px;
+  font-size: 21px;
+}
+
+.ecosystem-clean-card p {
+  margin: 0;
+  color: #c7d9e2;
+  line-height: 1.5;
+}
+
+.ecosystem-clean-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 255, 180, 0.45);
+}
+
+@media (max-width: 800px) {
+  .ecosystem-clean-grid {
+    grid-template-columns: 1fr;
+  }
+}
