@@ -2,11 +2,9 @@
 <html lang="es">
 <head>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9789327885520093"
-     crossorigin="anonymous"></script>
-
 <script data-cfasync="false" type="text/javascript" src="https://cache.consentframework.com/js/pa/50786/c/Snl5a/stub?source=google-tag"></script>
 <script data-cfasync="false" type="text/javascript" src="https://choices.consentframework.com/js/pa/50786/c/Snl5a/cmp?source=google-tag" async></script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AutomatizaTuNegocio | Automatización, IA y sistemas para negocios</title>
@@ -17,7 +15,7 @@
 
 <style>
   .hero-monetizacion{
-    margin:22px 0 22px;
+    margin:22px 0;
     padding:22px;
     border-radius:18px;
     background:linear-gradient(145deg, rgba(34,197,94,0.14), rgba(59,130,246,0.10));
@@ -39,25 +37,36 @@
     font-size:16px;
   }
 
-  .hero-monetizacion .btn-saas{
+  .btn-saas,
+  .btn-afiliado{
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    padding:14px 20px;
+    padding:15px 22px;
     border-radius:12px;
-    background:linear-gradient(135deg,var(--green),var(--green-2));
-    color:#02140d;
     font-weight:800;
-    box-shadow:0 10px 24px rgba(22,163,74,0.25);
     transition:0.2s ease;
   }
 
-  .hero-monetizacion .btn-saas:hover{
+  .btn-saas{
+    background:linear-gradient(135deg,var(--green),var(--green-2));
+    color:#02140d;
+    box-shadow:0 10px 24px rgba(22,163,74,0.25);
+  }
+
+  .btn-afiliado{
+    background:linear-gradient(135deg,var(--blue),var(--blue-2));
+    color:#fff;
+    box-shadow:0 10px 24px rgba(59,130,246,0.22);
+  }
+
+  .btn-saas:hover,
+  .btn-afiliado:hover{
     transform:translateY(-2px);
   }
 
   .afiliado-destacado{
-    padding:18px 0 8px;
+    padding:28px 0;
   }
 
   .afiliado-box{
@@ -104,23 +113,6 @@
     align-items:center;
   }
 
-  .btn-afiliado{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:15px 22px;
-    border-radius:12px;
-    background:linear-gradient(135deg,var(--blue),var(--blue-2));
-    color:#fff;
-    font-weight:800;
-    box-shadow:0 10px 24px rgba(59,130,246,0.22);
-    transition:0.2s ease;
-  }
-
-  .btn-afiliado:hover{
-    transform:translateY(-2px);
-  }
-
   .afiliado-micro{
     color:var(--muted-2);
     font-size:14px;
@@ -128,7 +120,7 @@
   }
 
   .cta-final-section{
-    padding:14px 0 42px;
+    padding:28px 0 42px;
   }
 
   .cta-final-box{
@@ -162,6 +154,42 @@
     gap:14px;
   }
 
+  .ecosystem-clean{
+    margin-top:30px;
+  }
+
+  .ecosystem-clean-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:22px;
+    margin-top:22px;
+  }
+
+  .ecosystem-clean-card{
+    background:linear-gradient(180deg,#0b2230,#06141c);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:24px;
+    transition:0.25s ease;
+  }
+
+  .ecosystem-clean-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(255,184,75,0.45);
+  }
+
+  .ecosystem-clean-card h3{
+    font-size:22px;
+    margin:0 0 10px;
+    color:#fff;
+  }
+
+  .ecosystem-clean-card p{
+    margin:0;
+    color:var(--muted);
+    line-height:1.7;
+  }
+
   .footer-note{
     margin-top:6px;
     color:var(--muted-2);
@@ -187,408 +215,435 @@
       align-items:stretch;
     }
 
-    .hero-monetizacion .btn-saas,
+    .btn-saas,
     .btn-afiliado{
       width:100%;
+    }
+
+    .ecosystem-clean-grid{
+      grid-template-columns:1fr;
     }
   }
 </style>
 </head>
+
 <body>
 
-  <header class="site-header" id="siteHeader">
-    <div class="header-container">
+<header class="site-header" id="siteHeader">
+  <div class="header-container">
 
-      <a href="/index.html" class="logo-link" aria-label="AutomatizaTuNegocio">
-        <img src="/assets/img/logo-header-auto.png" alt="AutomatizaTuNegocio" class="site-logo">
+    <a href="/index.html" class="logo-link" aria-label="AutomatizaTuNegocio">
+      <img src="/assets/img/logo-header-auto.png" alt="AutomatizaTuNegocio" class="site-logo">
+    </a>
+
+    <nav class="main-nav" aria-label="Principal">
+
+      <div class="nav-item has-dropdown">
+        <button class="nav-trigger" type="button">
+          Guías
+          <span class="nav-caret">▾</span>
+        </button>
+        <div class="dropdown-menu mega-menu">
+          <div class="dropdown-column">
+            <p class="dropdown-title">Empieza por aquí</p>
+            <a href="/guias/index.html">Todas las guías</a>
+            <a href="/guias/automatizar-negocio-con-ia/index.html">Automatizar con IA</a>
+            <a href="/guias/automatizar-email-marketing/index.html">Email marketing</a>
+            <a href="/guias/automatizar-ventas/index.html">Automatizar ventas</a>
+          </div>
+          <div class="dropdown-column">
+            <p class="dropdown-title">Productividad</p>
+            <a href="/guias/automatizar-captacion-de-clientes/index.html">Captación de clientes</a>
+            <a href="/guias/automatizar-redes-sociales/index.html">Redes sociales</a>
+            <a href="/guias/whatsapp-automatizado/index.html">WhatsApp automatizado</a>
+            <a href="/guias/formularios-y-leads/index.html">Formularios y leads</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item has-dropdown">
+        <button class="nav-trigger" type="button">
+          Herramientas
+          <span class="nav-caret">▾</span>
+        </button>
+        <div class="dropdown-menu">
+          <a href="/guias/mejores-herramientas-de-automatizacion/index.html">Herramientas recomendadas</a>
+          <a href="/guias/software-para-automatizar-negocios/index.html">Software para negocios</a>
+          <a href="/guias/crm-para-pymes/index.html">CRM para pymes</a>
+          <a href="/guias/systeme-vs-mailchimp/index.html">Systeme.io vs Mailchimp</a>
+        </div>
+      </div>
+
+      <div class="nav-item has-dropdown">
+        <button class="nav-trigger" type="button">
+          Explorar
+          <span class="nav-caret">▾</span>
+        </button>
+        <div class="dropdown-menu">
+          <a href="#articulos-destacados">Artículos destacados</a>
+          <a href="#herramientas-top">Herramientas top</a>
+          <a href="#newsletter">Boletín</a>
+          <a href="#ecosistema">Ecosistema</a>
+        </div>
+      </div>
+
+      <a href="/guias/index.html" class="nav-link-inline">Biblioteca</a>
+
+      <a href="https://go.hotmart.com/F105593695X" class="cta-system" target="_blank" rel="noopener noreferrer sponsored">
+        Descargar guía IA
       </a>
 
-      <nav class="main-nav" aria-label="Principal">
+    </nav>
 
-        <div class="nav-item has-dropdown">
-          <button class="nav-trigger" type="button">
-            Guías
-            <span class="nav-caret">▾</span>
-          </button>
-          <div class="dropdown-menu mega-menu">
-            <div class="dropdown-column">
-              <p class="dropdown-title">Empieza por aquí</p>
-              <a href="/guias/index.html">Todas las guías</a>
-              <a href="/guias/automatizar-negocio-con-ia/index.html">Automatizar con IA</a>
-              <a href="/guias/automatizar-email-marketing/index.html">Email marketing</a>
-              <a href="/guias/automatizar-ventas/index.html">Automatizar ventas</a>
-            </div>
-            <div class="dropdown-column">
-              <p class="dropdown-title">Productividad</p>
-              <a href="/guias/automatizar-captacion-de-clientes/index.html">Captación de clientes</a>
-              <a href="/guias/automatizar-redes-sociales/index.html">Redes sociales</a>
-              <a href="/guias/whatsapp-automatizado/index.html">WhatsApp automatizado</a>
-              <a href="/guias/formularios-y-leads/index.html">Formularios y leads</a>
-            </div>
-          </div>
-        </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+      ☰
+    </button>
 
-        <div class="nav-item has-dropdown">
-          <button class="nav-trigger" type="button">
-            Herramientas
-            <span class="nav-caret">▾</span>
-          </button>
-          <div class="dropdown-menu">
-            <a href="/guias/mejores-herramientas-de-automatizacion/index.html">Herramientas recomendadas</a>
-            <a href="/guias/software-para-automatizar-negocios/index.html">Software para negocios</a>
-            <a href="/guias/crm-para-pymes/index.html">CRM para pymes</a>
-            <a href="/guias/systeme-vs-mailchimp/index.html">Systeme.io vs Mailchimp</a>
-          </div>
-        </div>
+  </div>
 
-        <div class="nav-item has-dropdown">
-          <button class="nav-trigger" type="button">
-            Explorar
-            <span class="nav-caret">▾</span>
-          </button>
-          <div class="dropdown-menu">
-            <a href="#articulos-destacados">Artículos destacados</a>
-            <a href="#herramientas-top">Herramientas top</a>
-            <a href="#newsletter">Boletín</a>
-            <a href="#ecosistema">Ecosistema</a>
-          </div>
-        </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="/index.html">Inicio</a>
+    <a href="/guias/index.html">Todas las guías</a>
+    <a href="/guias/automatizar-negocio-con-ia/index.html">Automatizar con IA</a>
+    <a href="/guias/mejores-herramientas-de-automatizacion/index.html">Herramientas</a>
+    <a href="#articulos-destacados">Artículos destacados</a>
+    <a href="#newsletter">Boletín</a>
+    <a href="https://go.hotmart.com/F105593695X" target="_blank" rel="noopener noreferrer sponsored">Descargar guía IA</a>
+    <a href="https://sistemamaestroia.com/" target="_blank" rel="noopener noreferrer">Sistema Maestro IA</a>
+  </div>
+</header>
 
-        <a href="/guias/index.html" class="nav-link-inline">Biblioteca</a>
+<main>
 
-        <a href="https://sistemamaestroia.com/" class="cta-system" target="_blank" rel="noopener noreferrer">
-          Crear mi sistema IA
-        </a>
+  <section class="hero">
+    <div class="hero-inner">
 
-      </nav>
+      <div class="hero-copy">
+        <p class="eyebrow">AUTOMATIZACIÓN · IA · MONETIZACIÓN</p>
 
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
-        ☰
-      </button>
+        <h1>Convierte tu negocio en un sistema automático que capta, produce y vende</h1>
 
-    </div>
-
-    <div class="mobile-panel" id="mobilePanel">
-      <a href="/index.html">Inicio</a>
-      <a href="/guias/index.html">Todas las guías</a>
-      <a href="/guias/automatizar-negocio-con-ia/index.html">Automatizar con IA</a>
-      <a href="/guias/mejores-herramientas-de-automatizacion/index.html">Herramientas</a>
-      <a href="#articulos-destacados">Artículos destacados</a>
-      <a href="#newsletter">Boletín</a>
-      <a href="https://sistemamaestroia.com/" target="_blank" rel="noopener noreferrer">Sistema Maestro IA</a>
-    </div>
-  </header>
-
-  <main>
-
-    <section class="hero">
-      <div class="hero-inner">
-
-        <div class="hero-copy">
-          <p class="eyebrow">AUTOMATIZACIÓN · IA · MONETIZACIÓN</p>
-
-          <h1>Convierte tu negocio en un sistema automático que capta, produce y vende</h1>
-
-          <div class="hero-monetizacion">
-            <h2>🚀 Automatiza tu negocio con IA sin montar un sistema complejo desde cero</h2>
-            <p>
-              Si quieres pasar de tareas manuales y contenidos sueltos a una estructura que capte,
-              organice y convierta, empieza por el núcleo principal del ecosistema.
-            </p>
-            <a href="https://sistemamaestroia.com/" class="btn-saas" target="_blank" rel="noopener noreferrer">
-              Probar SistemaMaestroIA
-            </a>
-          </div>
-
-          <p class="hero-text">
-            Guías, herramientas y estrategias para automatizar tareas, marketing, contenidos,
-            captación de leads y procesos con inteligencia artificial sin montar un sistema complejo.
-          </p>
-
-          <div class="hero-actions">
-            <a href="/guias/index.html" class="btn btn-primary">Explorar guías</a>
-            <a href="/guias/mejores-herramientas-de-automatizacion/index.html" class="btn btn-secondary">Ver herramientas</a>
-          </div>
-
-          <div class="hero-badges">
-            <span>Automatización práctica</span>
-            <span>Afiliados SaaS</span>
-            <span>Contenido evergreen</span>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="reactor-card">
-            <div class="reactor-glow"></div>
-            <div class="reactor-ring ring-1"></div>
-            <div class="reactor-ring ring-2"></div>
-            <div class="reactor-core"></div>
-            <div class="reactor-label">
-              <strong>NÚCLEO IA</strong>
-              <span>Captación · Contenido · Monetización</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="categories-band">
-      <div class="categories-inner">
-        <a href="/guias/automatizar-negocio-con-ia/index.html" class="category-chip">IA para negocios</a>
-        <a href="/guias/automatizar-email-marketing/index.html" class="category-chip">Email marketing</a>
-        <a href="/guias/whatsapp-automatizado/index.html" class="category-chip">WhatsApp</a>
-        <a href="/guias/automatizar-captacion-de-clientes/index.html" class="category-chip">Captación</a>
-        <a href="/guias/automatizar-redes-sociales/index.html" class="category-chip">Redes sociales</a>
-        <a href="/guias/software-para-automatizar-negocios/index.html" class="category-chip">Software recomendado</a>
-      </div>
-    </section>
-
-    <section class="featured-posts-section" id="articulos-destacados">
-      <div class="section-shell">
-
-        <div class="section-heading">
-          <p class="section-kicker">ARTÍCULOS DESTACADOS</p>
-          <h2>Empieza por lo que más impacto puede tener en tu negocio</h2>
-          <p class="section-text">
-            Una selección de guías prioritarias para automatizar trabajo repetitivo,
-            captar clientes y construir sistemas más rentables.
-          </p>
-        </div>
-
-        <div class="post-grid">
-
-          <a class="post-card" href="/guias/automatizar-negocio-con-ia/index.html">
-            <div class="post-thumb">
-              <img src="/assets/img/logo-sistemamaestroia.png" alt="Automatizar negocio con IA">
-            </div>
-            <div class="post-body">
-              <span class="post-tag">GUÍA CLAVE</span>
-              <h3>Automatizar un negocio con IA</h3>
-              <p>La ruta más directa para usar inteligencia artificial en captación, procesos y ventas.</p>
-            </div>
-          </a>
-
-          <a class="post-card" href="/guias/automatizar-email-marketing/index.html">
-            <div class="post-thumb">
-              <img src="/assets/img/logo-header.png" alt="Automatizar email marketing">
-            </div>
-            <div class="post-body">
-              <span class="post-tag">MARKETING</span>
-              <h3>Automatizar email marketing</h3>
-              <p>Menos tareas manuales, más consistencia y más capacidad de producción.</p>
-            </div>
-          </a>
-
-          <a class="post-card" href="/guias/mejores-herramientas-de-automatizacion/index.html">
-            <div class="post-thumb">
-              <img src="/assets/img/logo-vendeconia.png" alt="Herramientas recomendadas">
-            </div>
-            <div class="post-body">
-              <span class="post-tag">SOFTWARE</span>
-              <h3>Mejores herramientas de automatización</h3>
-              <p>Selección práctica de software para automatización, captación y productividad.</p>
-            </div>
-          </a>
-
-          <a class="post-card" href="/guias/whatsapp-automatizado/index.html">
-            <div class="post-thumb">
-              <img src="/assets/img/logo-infovendeconia.png" alt="WhatsApp automatizado">
-            </div>
-            <div class="post-body">
-              <span class="post-tag">ATENCIÓN</span>
-              <h3>WhatsApp automatizado</h3>
-              <p>Seguimiento, respuestas y procesos de atención más rápidos y ordenados.</p>
-            </div>
-          </a>
-
-          <a class="post-card" href="/guias/automatizar-captacion-de-clientes/index.html">
-            <div class="post-thumb">
-              <img src="/assets/img/logo-gadgetsmania.png" alt="Captación de clientes">
-            </div>
-            <div class="post-body">
-              <span class="post-tag">CAPTACIÓN</span>
-              <h3>Automatizar captación de clientes</h3>
-              <p>Más leads, menos tareas manuales y mejor seguimiento comercial.</p>
-            </div>
-          </a>
-
-          <a class="post-card" href="/guias/software-para-automatizar-negocios/index.html">
-            <div class="post-thumb">
-              <img src="/assets/img/logo-header.png" alt="Software para automatizar negocios">
-            </div>
-            <div class="post-body">
-              <span class="post-tag">OPERACIONES</span>
-              <h3>Software para automatizar negocios</h3>
-              <p>Organiza flujos, reduce errores y gana tiempo operativo con herramientas simples.</p>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="tools-section" id="herramientas-top">
-      <div class="section-shell">
-
-
-        <div class="section-heading">
-          <p class="section-kicker">STACK RECOMENDADO</p>
-          <h2>Herramientas top para automatizar y monetizar</h2>
-          <p class="section-text">
-            Empieza con pocas herramientas, pero bien elegidas. Esta selección está orientada
-            a productividad, captación, contenido y negocio digital.
-          </p>
-        </div>
-
-        <div class="tools-grid">
-
-          <article class="tool-card featured">
-            <div class="tool-badge">RECOMENDADA</div>
-            <h3>Systeme.io</h3>
-            <p>Crea embudos, formularios, automatizaciones y secuencias de email desde una sola plataforma.</p>
-            <a href="https://josuecabellorosa83.systeme.io/30a703c4" target="_blank" rel="noopener noreferrer sponsored" class="tool-btn">
-              Probar herramienta
-            </a>
-          </article>
-
-          <article class="tool-card">
-            <h3>Writesonic</h3>
-            <p>Generación de artículos, ideas, copies y contenidos asistidos por IA.</p>
-            <a href="https://writesonic.com/" target="_blank" rel="noopener noreferrer sponsored" class="tool-btn">
-              Ver herramienta
-            </a>
-          </article>
-
-          <article class="tool-card">
-            <h3>Pictory</h3>
-            <p>Transforma textos y guiones en vídeos automáticos para marketing y redes sociales.</p>
-            <a href="https://pictory.ai?ref=joshue-cabello-rosa72" target="_blank" rel="noopener noreferrer sponsored" class="tool-btn">
-              Ver herramienta
-            </a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="afiliado-destacado">
-      <div class="section-shell">
-        <div class="afiliado-box">
-          <span class="afiliado-top">HERRAMIENTA RECOMENDADA</span>
-          <h2>Empieza gratis con una plataforma real para automatizar funnels, emails y ventas</h2>
+        <div class="hero-monetizacion">
+          <h2>🚀 Empieza creando tu Hub de Asistentes IA paso a paso</h2>
           <p>
-            Si quieres una forma simple de poner en marcha captación, formularios, automatizaciones
-            y seguimiento comercial, esta es una de las herramientas más directas para empezar sin complicarte.
+            Aprende a organizar asistentes, automatizar procesos y montar una estructura útil para contenido,
+            captación y ventas sin conocimientos técnicos avanzados.
           </p>
-          <div class="afiliado-actions">
-            <a href="https://josuecabellorosa83.systeme.io/30a703c4
-
-" target="_blank" rel="noopener noreferrer sponsored" class="btn-afiliado">
-              Probar Systeme gratis
-            </a>
-            <span class="afiliado-micro">Acceso externo. Recomendación comercial integrada en la estrategia de monetización.</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mini-panels-section">
-      <div class="section-shell mini-panels-grid">
-        <a href="/guias/index.html" class="mini-panel">
-          <span class="mini-label">BIBLIOTECA</span>
-          <h3>Todas las guías</h3>
-          <p>Accede a la biblioteca completa de contenido práctico.</p>
-        </a>
-
-        <a href="/guias/mejores-herramientas-de-automatizacion/index.html" class="mini-panel">
-          <span class="mini-label">SELECCIÓN</span>
-          <h3>Mejores herramientas</h3>
-          <p>Compara software y acelera la toma de decisiones.</p>
-        </a>
-
-        <a href="https://sistemamaestroia.com/" target="_blank" rel="noopener noreferrer" class="mini-panel">
-          <span class="mini-label">SISTEMA MAESTRO</span>
-          <h3>Subir de nivel</h3>
-          <p>Conecta captación, contenido y monetización en un sistema unificado.</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="newsletter-section" id="newsletter">
-      <div class="newsletter-shell">
-        <div class="newsletter-copy">
-          <p class="section-kicker">BOLETÍN</p>
-          <h2>Recibe nuevas guías y recursos de automatización</h2>
-          <p>
-            Mantente al día con nuevas ideas, herramientas y estrategias para automatizar
-            procesos, marketing y negocio digital.
-          </p>
+          <a href="https://go.hotmart.com/F105593695X" class="btn-saas" target="_blank" rel="noopener noreferrer sponsored">
+            👉 Descargar la guía práctica
+          </a>
         </div>
 
-        <form class="newsletter-form" action="#" method="post">
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" placeholder="Introduce tu email">
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </section>
-
-    <section class="ecosystem-carousel-section" id="ecosistema">
-      <div class="section-inner">
-
-        <p class="section-kicker">ECOSISTEMA DIGITAL</p>
-        <h2>Mis proyectos conectados</h2>
-        <p class="section-text">
-          Una red de activos digitales pensada para automatización, monetización, contenido
-          y desarrollo de sistemas inteligentes.
+        <p class="hero-text">
+          Guías, herramientas y estrategias para automatizar tareas, marketing, contenidos,
+          captación de leads y procesos con inteligencia artificial sin montar un sistema complejo.
         </p>
 
-       <section class="ecosystem-clean">
-  <h2>Explora el ecosistema</h2>
-  <p>Accede a las herramientas y recursos principales para automatizar, vender y monetizar con IA.</p>
+        <div class="hero-actions">
+          <a href="/guias/index.html" class="btn btn-primary">Explorar guías</a>
+          <a href="/guias/mejores-herramientas-de-automatizacion/index.html" class="btn btn-secondary">Ver herramientas</a>
+        </div>
 
-  <div class="ecosystem-clean-grid">
-    <a href="https://sistemamaestroia.com" class="ecosystem-clean-card">
-      <h3>SistemaMaestroIA</h3>
-      <p>Crea asistentes y sistemas automáticos para tu negocio.</p>
-    </a>
+        <div class="hero-badges">
+          <span>Automatización práctica</span>
+          <span>Afiliados SaaS</span>
+          <span>Contenido evergreen</span>
+        </div>
+      </div>
 
-    <a href="https://gadgetsmania.org" class="ecosystem-clean-card">
-      <h3>GadgetsMania</h3>
-      <p>Comparativas y productos recomendados con afiliación.</p>
-    </a>
-
-    <a href="https://infovendeconia.com" class="ecosystem-clean-card">
-      <h3>InfoVendeConIA</h3>
-      <p>Guías, recursos y formación práctica sobre IA.</p>
-    </a>
-  </div>
-</section>
-
-    <section class="cta-final-section">
-      <div class="section-shell">
-        <div class="cta-final-box">
-          <h2>🔥 Da el siguiente paso y convierte tu negocio en un sistema</h2>
-          <p>
-            Si ya estás buscando automatización, herramientas y procesos más rentables, el siguiente paso
-            inteligente es conectar captación, contenido, asistentes y monetización dentro de una estructura real.
-          </p>
-          <div class="cta-final-actions">
-            <a href="https://sistemamaestroia.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-              Crear mi sistema IA
-            </a>
-            <a href="/guias/automatizar-negocio-con-ia/index.html" class="btn btn-secondary">
-              Ver guía principal
-            </a>
+      <div class="hero-visual">
+        <div class="reactor-card">
+          <div class="reactor-glow"></div>
+          <div class="reactor-ring ring-1"></div>
+          <div class="reactor-ring ring-2"></div>
+          <div class="reactor-core"></div>
+          <div class="reactor-label">
+            <strong>NÚCLEO IA</strong>
+            <span>Captación · Contenido · Monetización</span>
           </div>
         </div>
       </div>
-    </section>
 
-  </main>
+    </div>
+  </section>
 
-  <footer class="site-footer">
+  <section class="afiliado-destacado">
+    <div class="section-shell">
+      <div class="afiliado-box">
+        <span class="afiliado-top">NUEVO PRODUCTO DIGITAL</span>
+        <h2>Guía práctica para crear tu Hub de Asistentes IA</h2>
+        <p>
+          Una guía paso a paso para organizar tus asistentes por funciones, automatizar procesos,
+          ahorrar tiempo y empezar a construir un sistema digital más claro y rentable.
+        </p>
+        <div class="afiliado-actions">
+          <a href="https://go.hotmart.com/F105593695X" target="_blank" rel="noopener noreferrer sponsored" class="btn-afiliado">
+            👉 Descargar la guía ahora
+          </a>
+          <span class="afiliado-micro">Acceso inmediato tras la compra. Producto digital en Hotmart.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories-band">
+    <div class="categories-inner">
+      <a href="/guias/automatizar-negocio-con-ia/index.html" class="category-chip">IA para negocios</a>
+      <a href="/guias/automatizar-email-marketing/index.html" class="category-chip">Email marketing</a>
+      <a href="/guias/whatsapp-automatizado/index.html" class="category-chip">WhatsApp</a>
+      <a href="/guias/automatizar-captacion-de-clientes/index.html" class="category-chip">Captación</a>
+      <a href="/guias/automatizar-redes-sociales/index.html" class="category-chip">Redes sociales</a>
+      <a href="/guias/software-para-automatizar-negocios/index.html" class="category-chip">Software recomendado</a>
+    </div>
+  </section>
+
+  <section class="featured-posts-section" id="articulos-destacados">
+    <div class="section-shell">
+
+      <div class="section-heading">
+        <p class="section-kicker">ARTÍCULOS DESTACADOS</p>
+        <h2>Empieza por lo que más impacto puede tener en tu negocio</h2>
+        <p class="section-text">
+          Una selección de guías prioritarias para automatizar trabajo repetitivo,
+          captar clientes y construir sistemas más rentables.
+        </p>
+      </div>
+
+      <div class="post-grid">
+
+        <a class="post-card" href="/guias/automatizar-negocio-con-ia/index.html">
+          <div class="post-thumb">
+            <img src="/assets/img/logo-sistemamaestroia.png" alt="Automatizar negocio con IA">
+          </div>
+          <div class="post-body">
+            <span class="post-tag">GUÍA CLAVE</span>
+            <h3>Automatizar un negocio con IA</h3>
+            <p>La ruta más directa para usar inteligencia artificial en captación, procesos y ventas.</p>
+          </div>
+        </a>
+
+        <a class="post-card" href="/guias/automatizar-email-marketing/index.html">
+          <div class="post-thumb">
+            <img src="/assets/img/logo-header.png" alt="Automatizar email marketing">
+          </div>
+          <div class="post-body">
+            <span class="post-tag">MARKETING</span>
+            <h3>Automatizar email marketing</h3>
+            <p>Menos tareas manuales, más consistencia y más capacidad de producción.</p>
+          </div>
+        </a>
+
+        <a class="post-card" href="/guias/mejores-herramientas-de-automatizacion/index.html">
+          <div class="post-thumb">
+            <img src="/assets/img/logo-vendeconia.png" alt="Herramientas recomendadas">
+          </div>
+          <div class="post-body">
+            <span class="post-tag">SOFTWARE</span>
+            <h3>Mejores herramientas de automatización</h3>
+            <p>Selección práctica de software para automatización, captación y productividad.</p>
+          </div>
+        </a>
+
+        <a class="post-card" href="/guias/whatsapp-automatizado/index.html">
+          <div class="post-thumb">
+            <img src="/assets/img/logo-infovendeconia.png" alt="WhatsApp automatizado">
+          </div>
+          <div class="post-body">
+            <span class="post-tag">ATENCIÓN</span>
+            <h3>WhatsApp automatizado</h3>
+            <p>Seguimiento, respuestas y procesos de atención más rápidos y ordenados.</p>
+          </div>
+        </a>
+
+        <a class="post-card" href="/guias/automatizar-captacion-de-clientes/index.html">
+          <div class="post-thumb">
+            <img src="/assets/img/logo-gadgetsmania.png" alt="Captación de clientes">
+          </div>
+          <div class="post-body">
+            <span class="post-tag">CAPTACIÓN</span>
+            <h3>Automatizar captación de clientes</h3>
+            <p>Más leads, menos tareas manuales y mejor seguimiento comercial.</p>
+          </div>
+        </a>
+
+        <a class="post-card" href="/guias/software-para-automatizar-negocios/index.html">
+          <div class="post-thumb">
+            <img src="/assets/img/logo-header.png" alt="Software para automatizar negocios">
+          </div>
+          <div class="post-body">
+            <span class="post-tag">OPERACIONES</span>
+            <h3>Software para automatizar negocios</h3>
+            <p>Organiza flujos, reduce errores y gana tiempo operativo con herramientas simples.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="tools-section" id="herramientas-top">
+    <div class="section-shell">
+
+      <div class="section-heading">
+        <p class="section-kicker">STACK RECOMENDADO</p>
+        <h2>Herramientas top para automatizar y monetizar</h2>
+        <p class="section-text">
+          Empieza con pocas herramientas, pero bien elegidas. Esta selección está orientada
+          a productividad, captación, contenido y negocio digital.
+        </p>
+      </div>
+
+      <div class="tools-grid">
+
+        <article class="tool-card featured">
+          <div class="tool-badge">RECOMENDADA</div>
+          <h3>Systeme.io</h3>
+          <p>Crea embudos, formularios, automatizaciones y secuencias de email desde una sola plataforma.</p>
+          <a href="https://josuecabellorosa83.systeme.io/30a703c4" target="_blank" rel="noopener noreferrer sponsored" class="tool-btn">
+            Probar herramienta
+          </a>
+        </article>
+
+        <article class="tool-card">
+          <h3>Pictory</h3>
+          <p>Transforma textos y guiones en vídeos automáticos para marketing y redes sociales.</p>
+          <a href="https://pictory.ai?ref=joshue-cabello-rosa72" target="_blank" rel="noopener noreferrer sponsored" class="tool-btn">
+            Ver herramienta
+          </a>
+        </article>
+
+        <article class="tool-card">
+          <h3>Guía Hub de Asistentes IA</h3>
+          <p>Producto digital propio para aprender a organizar asistentes, procesos y automatización.</p>
+          <a href="https://go.hotmart.com/F105593695X" target="_blank" rel="noopener noreferrer sponsored" class="tool-btn">
+            Comprar guía
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="afiliado-destacado">
+    <div class="section-shell">
+      <div class="afiliado-box">
+        <span class="afiliado-top">HERRAMIENTA RECOMENDADA</span>
+        <h2>Empieza gratis con una plataforma real para automatizar funnels, emails y ventas</h2>
+        <p>
+          Si quieres una forma simple de poner en marcha captación, formularios, automatizaciones
+          y seguimiento comercial, esta es una de las herramientas más directas para empezar sin complicarte.
+        </p>
+        <div class="afiliado-actions">
+          <a href="https://josuecabellorosa83.systeme.io/30a703c4" target="_blank" rel="noopener noreferrer sponsored" class="btn-afiliado">
+            Probar Systeme gratis
+          </a>
+          <span class="afiliado-micro">Acceso externo. Recomendación comercial integrada en la estrategia de monetización.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mini-panels-section">
+    <div class="section-shell mini-panels-grid">
+
+      <a href="/guias/index.html" class="mini-panel">
+        <span class="mini-label">BIBLIOTECA</span>
+        <h3>Todas las guías</h3>
+        <p>Accede a la biblioteca completa de contenido práctico.</p>
+      </a>
+
+      <a href="https://go.hotmart.com/F105593695X" target="_blank" rel="noopener noreferrer sponsored" class="mini-panel">
+        <span class="mini-label">PRODUCTO DIGITAL</span>
+        <h3>Guía Hub de Asistentes IA</h3>
+        <p>Compra la guía práctica para crear tu sistema de asistentes.</p>
+      </a>
+
+      <a href="https://sistemamaestroia.com/" target="_blank" rel="noopener noreferrer" class="mini-panel">
+        <span class="mini-label">SISTEMA MAESTRO</span>
+        <h3>Subir de nivel</h3>
+        <p>Conecta captación, contenido y monetización en un sistema unificado.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="newsletter-section" id="newsletter">
+    <div class="newsletter-shell">
+      <div class="newsletter-copy">
+        <p class="section-kicker">BOLETÍN</p>
+        <h2>Recibe nuevas guías y recursos de automatización</h2>
+        <p>
+          Mantente al día con nuevas ideas, herramientas y estrategias para automatizar
+          procesos, marketing y negocio digital.
+        </p>
+      </div>
+
+      <form class="newsletter-form" action="#" method="post">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Introduce tu email">
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="ecosystem-carousel-section" id="ecosistema">
+    <div class="section-inner">
+
+      <p class="section-kicker">ECOSISTEMA DIGITAL</p>
+      <h2>Mis proyectos conectados</h2>
+      <p class="section-text">
+        Una red de activos digitales pensada para automatización, monetización, contenido
+        y desarrollo de sistemas inteligentes.
+      </p>
+
+      <div class="ecosystem-clean">
+        <h2>Explora el ecosistema</h2>
+        <p class="section-text">Accede a las herramientas y recursos principales para automatizar, vender y monetizar con IA.</p>
+
+        <div class="ecosystem-clean-grid">
+          <a href="https://sistemamaestroia.com" target="_blank" rel="noopener noreferrer" class="ecosystem-clean-card">
+            <h3>SistemaMaestroIA</h3>
+            <p>Crea asistentes y sistemas automáticos para tu negocio.</p>
+          </a>
+
+          <a href="https://go.hotmart.com/F105593695X" target="_blank" rel="noopener noreferrer sponsored" class="ecosystem-clean-card">
+            <h3>Guía Hub de Asistentes IA</h3>
+            <p>Producto digital propio para empezar a ordenar y automatizar tu sistema.</p>
+          </a>
+
+          <a href="https://infovendeconia.com" target="_blank" rel="noopener noreferrer" class="ecosystem-clean-card">
+            <h3>InfoVendeConIA</h3>
+            <p>Guías, recursos y formación práctica sobre IA.</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-final-section">
+    <div class="section-shell">
+      <div class="cta-final-box">
+        <h2>🔥 Empieza hoy con una guía práctica y directa</h2>
+        <p>
+          Si quieres organizar tus asistentes, tus procesos y tu automatización sin perderte,
+          empieza por la guía práctica del Hub de Asistentes IA.
+        </p>
+        <div class="cta-final-actions">
+          <a href="https://go.hotmart.com/F105593695X" class="btn btn-primary" target="_blank" rel="noopener noreferrer sponsored">
+            Descargar la guía ahora
+          </a>
+          <a href="https://sistemamaestroia.com/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+            Ver SistemaMaestroIA
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
   <div class="footer-shell">
 
     <div class="footer-brand">
@@ -601,7 +656,7 @@
       <h3>Empieza aquí</h3>
       <a href="/guias/index.html">Guías</a>
       <a href="/guias/automatizar-negocio-con-ia/index.html">Guía principal</a>
-      <a href="/guias/mejores-herramientas-de-automatizacion/index.html">Herramientas</a>
+      <a href="https://go.hotmart.com/F105593695X" target="_blank" rel="noopener noreferrer sponsored">Guía Hub IA</a>
     </div>
 
     <div class="footer-col">
@@ -613,9 +668,9 @@
 
     <div class="footer-col">
       <h3>Sistema</h3>
-      <a href="https://sistemamaestroia.com/" target="_blank">Sistema Maestro IA</a>
-      <a href="https://vendeconia.org/" target="_blank">VendeConIA</a>
-      <a href="https://infovendeconia.com/" target="_blank">InfoVendeConIA</a>
+      <a href="https://sistemamaestroia.com/" target="_blank" rel="noopener noreferrer">Sistema Maestro IA</a>
+      <a href="https://vendeconia.org/" target="_blank" rel="noopener noreferrer">VendeConIA</a>
+      <a href="https://infovendeconia.com/" target="_blank" rel="noopener noreferrer">InfoVendeConIA</a>
     </div>
 
     <div class="footer-col">
@@ -628,6 +683,7 @@
 
   </div>
 </footer>
-  <script src="/assets/js/site.js"></script>
+
+<script src="/assets/js/site.js"></script>
 </body>
 </html>
