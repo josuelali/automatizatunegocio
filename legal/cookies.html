@@ -1,7 +1,45 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de cookies | AutomatizaTuNegocio</title><meta name="description" content="Política de cookies de AutomatizaTuNegocio.org: tipos, finalidad y cómo gestionar el consentimiento.">
-<link rel="canonical" href="https://automatizatunegocio.org/legal/cookies.html"><link rel="stylesheet" href="/assets/css/styles.css"></head>
+<link rel="canonical" href="https://automatizatunegocio.org/legal/cookies.html"><link rel="stylesheet" href="/assets/css/styles.css">  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2QTH54RLR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-H2QTH54RLR');
+  </script>
+  <script>
+    (function() {
+      function trackAutomatizatunegocioEvent(eventName, params) {
+        if (typeof gtag === 'function') {
+          gtag('event', eventName, Object.assign({
+            asset_name: 'automatizatunegocio',
+            page_url: window.location.href
+          }, params || {}));
+        }
+      }
+      window.addEventListener('click', function(event) {
+        var link = event.target && event.target.closest ? event.target.closest('a') : null;
+        if (!link) return;
+        var href = link.getAttribute('href') || '';
+        var text = (link.textContent || '').trim().slice(0, 120);
+        var isGuide = href.indexOf('/guias/') !== -1 || link.closest('article, .card, .guide-card');
+        var isOutbound = link.hostname && link.hostname !== window.location.hostname;
+        var isAffiliate = /amazon|amzn\.to|hostinger|pictory|systeme\.io|picodi/i.test(href);
+        if (isAffiliate) {
+          trackAutomatizatunegocioEvent('affiliate_click', { cta_text: text, destination_url: link.href, cta_location: 'link', merchant: link.hostname });
+        } else if (isOutbound) {
+          trackAutomatizatunegocioEvent('outbound_click', { cta_text: text, destination_url: link.href, cta_location: 'link' });
+        } else if (isGuide) {
+          trackAutomatizatunegocioEvent('guide_click', { cta_text: text, destination_url: link.href, cta_location: 'guide_link' });
+        } else if (href && href !== '#') {
+          trackAutomatizatunegocioEvent('cta_click', { cta_text: text, destination_url: link.href, cta_location: 'link' });
+        }
+      }, true);
+    })();
+  </script>
+</head>
 <body><main class="container article"><article class="article"><h1>Política de cookies</h1><p class="meta">Última actualización: 02/05/2026</p>
 <p>Una cookie es un archivo pequeño que se almacena en tu navegador para recordar preferencias o medir uso del sitio.</p>
 <h2>Tipos de cookies</h2><ul><li><strong>Técnicas</strong>: necesarias para funcionamiento básico.</li><li><strong>Analíticas</strong>: medición anónima de uso cuando se activen herramientas de analítica.</li><li><strong>Publicitarias</strong>: personalización/medición de anuncios si se activa Google AdSense.</li></ul>
