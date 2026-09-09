@@ -1,80 +1,92 @@
 # Auditoría AdSense — automatizatunegocio.org
 
-## Fase 1 (pre-corrección)
+## Objetivo
+Corregir las señales asociadas al rechazo de AdSense por **contenido de poco valor** sin eliminar las vías de monetización del proyecto.
 
-### Archivos revisados
-- index.html
-- guias/index.html
-- guias/*/index.html
-- legal/*.html
-- sitemap.xml
-- robots.txt
-- ads.txt
+## Estado técnico confirmado
+- `ads.txt` presente con el publisher correcto.
+- `robots.txt` permite rastreo general y referencia el sitemap.
+- La etiqueta AdSense está centralizada en `assets/js/site.js`.
+- GA4 queda centralizado en `assets/js/site.js` y condicionado a señal de consentimiento.
+- Producción no se modifica durante esta fase: trabajo realizado en `fix/adsense-value-review-v1`.
 
-### Hallazgos principales
-- Placeholders detectados (`TODO`, `Añada aquí`, `imagen principal`, `Enlace afiliado disponible próximamente`).
-- Caracteres rotos detectados (`??`, `�`, acentos corruptos) en varias guías.
-- Varias guías con metadatos pobres o genéricos (`Automatizar email marketing`, `Guía completa...`).
-- Bloques afiliados repetidos en exceso dentro de la misma guía (múltiples módulos de Systeme/Amazon).
-- Párrafos repetidos de herramientas y promoción entre varias guías.
-- Algunas páginas legales mezclaban contenido comercial no necesario para sección legal.
-- sitemap.xml incluye páginas con señales de baja calidad que requerían limpieza.
+## Hallazgos iniciales
+- Bloques comerciales y afiliados repetidos en exceso dentro de la misma página.
+- Varias guías compartían estructura y párrafos casi intercambiables.
+- Promesas comerciales demasiado prominentes frente al contenido editorial.
+- Metadatos genéricos en distintas guías.
+- Restos de plantilla, placeholders y caracteres rotos en parte del contenido heredado.
+- Páginas legales y de confianza insuficientemente conectadas con el contenido editorial.
 
-### Páginas con señales claras de plantilla o inacabadas
-- guias/automatizar-embudos-de-ventas/index.html
-- guias/software-para-automatizar-negocios/index.html
-- guias/automatizar-ventas/index.html
-- guias/formularios-y-leads/index.html
-- guias/systeme-vs-mailchimp/index.html
-- guias/automatizar-negocio-con-ia/index.html
-- guias/automatizar-redes-sociales/index.html
-- guias/embudos-simples/index.html
-- guias/automatizar-captacion-de-clientes/index.html
-- guias/automatizar-negocio-online/index.html
-- guias/crm-para-pymes/index.html
-- guias/automatizar-email-marketing/index.html
+## Correcciones editoriales ya aplicadas
 
+### Home
+- Reordenada para que el contenido útil sea el elemento principal.
+- Reducido el protagonismo de lenguaje de monetización y afiliación.
+- Monetización conservada como elemento secundario.
+- Añadidas señales de confianza y enlaces a información editorial.
 
-## Fase 2 — Correcciones aplicadas
-- Limpieza masiva de placeholders y marcadores temporales en guías (`TODO`, `Añada aquí`, `imagen principal`, textos de afiliado pendientes).
-- Corrección de caracteres rotos y símbolos residuales (`??`, `�`) en páginas de guías y legales.
-- Reducción de lenguaje promocional repetitivo en bloques internos.
-- Mantenimiento de URLs existentes de guías, sin cambios de slug.
-- Conservación de `ads.txt` y `robots.txt` (sin cambios por no detectar bloqueo/formato crítico).
+### Señales de confianza
+- Creada `sobre-nosotros.html`.
+- Creada `politica-editorial.html`.
+- Ambas páginas añadidas al sitemap.
 
-## Fase 3 — Páginas legales
-- Reescritura de `legal/contacto.html`, `legal/privacidad.html` y `legal/cookies.html` para eliminar elementos de plantilla, enlaces erróneos y scripts externos innecesarios.
-- Inclusión de enlace de retorno a inicio y navegación legal mínima consistente.
-- Inclusión de marcador explícito cuando falta dato legal concreto:
-  - `[PENDIENTE: completar dato fiscal/contacto ...]`
+### Guías reescritas en profundidad
+1. `guias/automatizar-negocio-con-ia/index.html`
+   - Eliminada la estructura repetitiva de promociones.
+   - Sustituida por proceso, criterios, ejemplo, métricas, errores y límites.
+   - Promoción reducida a un recurso secundario.
 
-## Fase 4 — Sitemap y navegación
-- Corregidos enlaces internos rotos de guías hacia URLs existentes.
-- Limpieza de `sitemap.xml` eliminando URLs inexistentes.
+2. `guias/automatizar-captacion-de-clientes/index.html`
+   - Nuevo flujo editorial centrado en entrada, clasificación, seguimiento y métricas.
+   - Eliminados múltiples bloques repetidos de Systeme.io, Hostinger y Pictory.
+   - Conservado un único recurso afiliado opcional y claramente identificado.
 
-## Fase 5 — Validación final
-### Archivos modificados
-- AUDITORIA_ADSENSE.md
-- guias/index.html
-- guias/*/index.html (múltiples guías)
-- legal/contacto.html
-- legal/privacidad.html
-- legal/cookies.html
-- sitemap.xml
+3. `guias/automatizar-email-marketing/index.html`
+   - Añadidas secuencias útiles, segmentación, frecuencia, métricas y ejemplo.
+   - Eliminado contenido promocional repetitivo.
+   - Conservado un único recurso afiliado opcional.
 
-### Problemas corregidos
-- Placeholders y textos en construcción.
-- Caracteres rotos/codificación visible.
-- Enlaces internos rotos más frecuentes en guías.
-- Páginas legales con formato incompleto o incoherente.
-- URLs inexistentes dentro del sitemap.
+4. `guias/automatizar-embudos-de-ventas/index.html`
+   - Reescrita alrededor de etapas, reglas, ejemplo de proceso, métricas y errores.
+   - Reducida la dependencia del contenido comercial.
 
-### Problemas pendientes
-- Persisten guías con exceso estructural de bloques comerciales heredados (aunque saneadas en texto); recomendable una segunda iteración editorial por guía para mejorar profundidad y reducir módulos promocionales repetidos a 1 bloque definitivo.
-- Falta completar datos fiscales del responsable legal.
+5. `guias/crm-para-pymes/index.html`
+   - Reescrita con criterios de elección, datos mínimos, etapas y automatizaciones útiles.
+   - Eliminados módulos comerciales repetitivos.
 
-### Páginas recomendadas para mantener en sitemap
-- Home, índice de guías, guías ya saneadas, páginas legales y `sistema-maestro-ia` si está finalizada.
+6. `guias/formularios-y-leads/index.html`
+   - Reescrita con foco en campos esenciales, fricción, calidad del lead, privacidad y métricas.
+   - Sin bloques afiliados innecesarios.
 
-### Páginas que conviene no enviar todavía a AdSense si quedan débiles
-- Cualquier guía que todavía mantenga estructura repetitiva excesiva de afiliación frente a contenido editorial.
+## Criterio editorial aplicado
+Cada guía debe responder a una intención concreta y aportar al menos:
+- explicación específica del problema;
+- proceso o método utilizable;
+- ejemplo práctico;
+- criterios de decisión;
+- errores o límites;
+- enlaces internos relacionados;
+- monetización secundaria, no dominante.
+
+## Pendientes antes de solicitar nueva revisión
+- Reescribir o revisar las guías heredadas que todavía mantengan bloques comerciales repetitivos, especialmente:
+  - `guias/automatizar-ventas/index.html`
+  - `guias/automatizar-redes-sociales/index.html`
+  - `guias/automatizar-negocio-online/index.html`
+  - `guias/embudos-simples/index.html`
+  - `guias/software-para-automatizar-negocios/index.html`
+  - `guias/systeme-vs-mailchimp/index.html`
+- Revisar el índice `guias/index.html` para reducir promoción directa en el área superior.
+- Revisar páginas legales para eliminar scripts de analítica directos que puedan cargar antes del consentimiento.
+- Verificar que Sirdata no siga coexistiendo con Google CMP en páginas principales antes del despliegue final.
+- Completar cualquier dato legal que el titular decida publicar y pueda verificar.
+- Validar enlaces internos, sitemap y páginas indexables antes del merge.
+
+## Condición para reenvío a AdSense
+No solicitar una nueva revisión hasta que:
+1. las páginas principales y las guías indexadas tengan contenido editorial claramente dominante;
+2. no queden bloques afiliados repetidos de forma sistemática;
+3. `ads.txt` esté accesible públicamente;
+4. CMP/Consent Mode y carga de analítica/publicidad estén coherentes;
+5. la versión corregida haya sido desplegada y rastreable.
