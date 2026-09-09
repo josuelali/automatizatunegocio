@@ -17,8 +17,9 @@ Corregir las señales asociadas al rechazo de AdSense por **contenido de poco va
 - Metadatos genéricos en distintas guías.
 - Restos de plantilla, placeholders y caracteres rotos en parte del contenido heredado.
 - Páginas legales y de confianza insuficientemente conectadas con el contenido editorial.
+- Carga directa de analítica en varias páginas y convivencia de scripts CMP heredados en el índice de guías.
 
-## Correcciones editoriales ya aplicadas
+## Correcciones editoriales aplicadas
 
 ### Home
 - Reordenada para que el contenido útil sea el elemento principal.
@@ -31,62 +32,68 @@ Corregir las señales asociadas al rechazo de AdSense por **contenido de poco va
 - Creada `politica-editorial.html`.
 - Ambas páginas añadidas al sitemap.
 
+### Biblioteca de guías
+- Reconstruido `guias/index.html` como índice editorial.
+- Eliminados del índice los scripts CMP heredados y la carga directa de GA4.
+- Eliminada la oferta comercial dominante en la cabecera.
+- Organizadas las guías por fundamentos, captación/ventas, marketing/contenido y herramientas.
+
 ### Guías reescritas en profundidad
-1. `guias/automatizar-negocio-con-ia/index.html`
-   - Eliminada la estructura repetitiva de promociones.
-   - Sustituida por proceso, criterios, ejemplo, métricas, errores y límites.
-   - Promoción reducida a un recurso secundario.
+- `guias/automatizar-negocio-con-ia/index.html`
+- `guias/automatizar-negocio-online/index.html`
+- `guias/automatizar-captacion-de-clientes/index.html`
+- `guias/automatizar-email-marketing/index.html`
+- `guias/automatizar-embudos-de-ventas/index.html`
+- `guias/automatizar-redes-sociales/index.html`
+- `guias/automatizar-ventas/index.html`
+- `guias/crm-para-pymes/index.html`
+- `guias/embudos-simples/index.html`
+- `guias/formularios-y-leads/index.html`
+- `guias/mejores-herramientas-de-automatizacion/index.html`
+- `guias/software-para-automatizar-negocios/index.html`
+- `guias/systeme-vs-mailchimp/index.html`
+- `guias/whatsapp-automatizado/index.html`
 
-2. `guias/automatizar-captacion-de-clientes/index.html`
-   - Nuevo flujo editorial centrado en entrada, clasificación, seguimiento y métricas.
-   - Eliminados múltiples bloques repetidos de Systeme.io, Hostinger y Pictory.
-   - Conservado un único recurso afiliado opcional y claramente identificado.
-
-3. `guias/automatizar-email-marketing/index.html`
-   - Añadidas secuencias útiles, segmentación, frecuencia, métricas y ejemplo.
-   - Eliminado contenido promocional repetitivo.
-   - Conservado un único recurso afiliado opcional.
-
-4. `guias/automatizar-embudos-de-ventas/index.html`
-   - Reescrita alrededor de etapas, reglas, ejemplo de proceso, métricas y errores.
-   - Reducida la dependencia del contenido comercial.
-
-5. `guias/crm-para-pymes/index.html`
-   - Reescrita con criterios de elección, datos mínimos, etapas y automatizaciones útiles.
-   - Eliminados módulos comerciales repetitivos.
-
-6. `guias/formularios-y-leads/index.html`
-   - Reescrita con foco en campos esenciales, fricción, calidad del lead, privacidad y métricas.
-   - Sin bloques afiliados innecesarios.
-
-## Criterio editorial aplicado
-Cada guía debe responder a una intención concreta y aportar al menos:
+### Criterio aplicado en las reescrituras
+Cada guía se centra ahora en una intención concreta y prioriza:
 - explicación específica del problema;
 - proceso o método utilizable;
-- ejemplo práctico;
+- ejemplos prácticos;
 - criterios de decisión;
-- errores o límites;
+- métricas;
+- errores y límites;
 - enlaces internos relacionados;
-- monetización secundaria, no dominante.
+- monetización secundaria o inexistente en el cuerpo editorial.
 
-## Pendientes antes de solicitar nueva revisión
-- Reescribir o revisar las guías heredadas que todavía mantengan bloques comerciales repetitivos, especialmente:
-  - `guias/automatizar-ventas/index.html`
-  - `guias/automatizar-redes-sociales/index.html`
-  - `guias/automatizar-negocio-online/index.html`
-  - `guias/embudos-simples/index.html`
-  - `guias/software-para-automatizar-negocios/index.html`
-  - `guias/systeme-vs-mailchimp/index.html`
-- Revisar el índice `guias/index.html` para reducir promoción directa en el área superior.
-- Revisar páginas legales para eliminar scripts de analítica directos que puedan cargar antes del consentimiento.
-- Verificar que Sirdata no siga coexistiendo con Google CMP en páginas principales antes del despliegue final.
-- Completar cualquier dato legal que el titular decida publicar y pueda verificar.
-- Validar enlaces internos, sitemap y páginas indexables antes del merge.
+Se han eliminado de las páginas reescritas los patrones repetitivos de Systeme.io, Hostinger, Pictory y otros bloques comerciales que antes aparecían entre múltiples secciones.
+
+## Páginas legales
+- Reescrita `legal/privacidad.html` para reflejar GA4, AdSense, consentimiento y enlaces externos sin cargar scripts publicitarios o analíticos en la propia página.
+- Reescrita `legal/cookies.html` para reflejar el estado actual de Google Analytics 4, Google AdSense y Consent Mode.
+- Simplificada `legal/contacto.html`, eliminando marcadores de datos pendientes visibles.
+- Simplificado `legal/aviso-legal.html` y eliminados scripts de seguimiento innecesarios.
+- `sitemap.xml` incluye privacidad, cookies, contacto, aviso legal, sobre nosotros y política editorial.
+
+## CMP y Consent Mode
+- La home corregida ya no contiene los scripts Sirdata heredados.
+- El índice `guias/index.html` corregido ya no contiene los scripts Sirdata heredados.
+- Según la auditoría previa del repositorio, esas eran las ubicaciones detectadas para `consentframework.com`; debe realizarse una validación final de la rama antes del merge para confirmar que no queda coexistencia con Google CMP.
+- Consent Mode de publicidad y analítica está configurado desde AdSense según la validación realizada en cuenta.
+
+## Estado editorial actual
+Las principales páginas indexables de contenido han sido reescritas o revisadas para que el contenido editorial sea claramente dominante frente a promoción o afiliación.
+
+## Pendientes antes del merge
+1. Validación final de la rama frente a `main`.
+2. Comprobar que no quedan placeholders, enlaces `#` relevantes, caracteres rotos ni scripts Sirdata en las páginas que se van a publicar.
+3. Verificar que `https://automatizatunegocio.org/ads.txt` responde correctamente después del despliegue.
+4. Verificar navegación, sitemap, páginas legales y carga de GA4/AdSense en producción.
+5. Comprobar de nuevo el mensaje CMP con el parámetro oficial de prueba de Google después del despliegue corregido.
 
 ## Condición para reenvío a AdSense
 No solicitar una nueva revisión hasta que:
-1. las páginas principales y las guías indexadas tengan contenido editorial claramente dominante;
-2. no queden bloques afiliados repetidos de forma sistemática;
-3. `ads.txt` esté accesible públicamente;
-4. CMP/Consent Mode y carga de analítica/publicidad estén coherentes;
-5. la versión corregida haya sido desplegada y rastreable.
+1. la rama corregida se haya fusionado y desplegado;
+2. las páginas principales sean rastreables y navegables;
+3. `ads.txt` sea accesible públicamente;
+4. CMP/Consent Mode y carga de analítica/publicidad sean coherentes;
+5. se haya realizado una comprobación final de contenido y enlaces en producción.
