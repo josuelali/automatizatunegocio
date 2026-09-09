@@ -1,80 +1,99 @@
 # Auditoría AdSense — automatizatunegocio.org
 
-## Fase 1 (pre-corrección)
+## Objetivo
+Corregir las señales asociadas al rechazo de AdSense por **contenido de poco valor** sin eliminar las vías de monetización del proyecto.
 
-### Archivos revisados
-- index.html
-- guias/index.html
-- guias/*/index.html
-- legal/*.html
-- sitemap.xml
-- robots.txt
-- ads.txt
+## Estado técnico confirmado
+- `ads.txt` presente con el publisher correcto.
+- `robots.txt` permite rastreo general y referencia el sitemap.
+- La etiqueta AdSense está centralizada en `assets/js/site.js`.
+- GA4 queda centralizado en `assets/js/site.js` y condicionado a señal de consentimiento.
+- Producción no se modifica durante esta fase: trabajo realizado en `fix/adsense-value-review-v1`.
 
-### Hallazgos principales
-- Placeholders detectados (`TODO`, `Añada aquí`, `imagen principal`, `Enlace afiliado disponible próximamente`).
-- Caracteres rotos detectados (`??`, `�`, acentos corruptos) en varias guías.
-- Varias guías con metadatos pobres o genéricos (`Automatizar email marketing`, `Guía completa...`).
-- Bloques afiliados repetidos en exceso dentro de la misma guía (múltiples módulos de Systeme/Amazon).
-- Párrafos repetidos de herramientas y promoción entre varias guías.
-- Algunas páginas legales mezclaban contenido comercial no necesario para sección legal.
-- sitemap.xml incluye páginas con señales de baja calidad que requerían limpieza.
+## Hallazgos iniciales
+- Bloques comerciales y afiliados repetidos en exceso dentro de la misma página.
+- Varias guías compartían estructura y párrafos casi intercambiables.
+- Promesas comerciales demasiado prominentes frente al contenido editorial.
+- Metadatos genéricos en distintas guías.
+- Restos de plantilla, placeholders y caracteres rotos en parte del contenido heredado.
+- Páginas legales y de confianza insuficientemente conectadas con el contenido editorial.
+- Carga directa de analítica en varias páginas y convivencia de scripts CMP heredados en el índice de guías.
 
-### Páginas con señales claras de plantilla o inacabadas
-- guias/automatizar-embudos-de-ventas/index.html
-- guias/software-para-automatizar-negocios/index.html
-- guias/automatizar-ventas/index.html
-- guias/formularios-y-leads/index.html
-- guias/systeme-vs-mailchimp/index.html
-- guias/automatizar-negocio-con-ia/index.html
-- guias/automatizar-redes-sociales/index.html
-- guias/embudos-simples/index.html
-- guias/automatizar-captacion-de-clientes/index.html
-- guias/automatizar-negocio-online/index.html
-- guias/crm-para-pymes/index.html
-- guias/automatizar-email-marketing/index.html
+## Correcciones editoriales aplicadas
 
+### Home
+- Reordenada para que el contenido útil sea el elemento principal.
+- Reducido el protagonismo de lenguaje de monetización y afiliación.
+- Monetización conservada como elemento secundario.
+- Añadidas señales de confianza y enlaces a información editorial.
 
-## Fase 2 — Correcciones aplicadas
-- Limpieza masiva de placeholders y marcadores temporales en guías (`TODO`, `Añada aquí`, `imagen principal`, textos de afiliado pendientes).
-- Corrección de caracteres rotos y símbolos residuales (`??`, `�`) en páginas de guías y legales.
-- Reducción de lenguaje promocional repetitivo en bloques internos.
-- Mantenimiento de URLs existentes de guías, sin cambios de slug.
-- Conservación de `ads.txt` y `robots.txt` (sin cambios por no detectar bloqueo/formato crítico).
+### Señales de confianza
+- Creada `sobre-nosotros.html`.
+- Creada `politica-editorial.html`.
+- Ambas páginas añadidas al sitemap.
 
-## Fase 3 — Páginas legales
-- Reescritura de `legal/contacto.html`, `legal/privacidad.html` y `legal/cookies.html` para eliminar elementos de plantilla, enlaces erróneos y scripts externos innecesarios.
-- Inclusión de enlace de retorno a inicio y navegación legal mínima consistente.
-- Inclusión de marcador explícito cuando falta dato legal concreto:
-  - `[PENDIENTE: completar dato fiscal/contacto ...]`
+### Biblioteca de guías
+- Reconstruido `guias/index.html` como índice editorial.
+- Eliminados del índice los scripts CMP heredados y la carga directa de GA4.
+- Eliminada la oferta comercial dominante en la cabecera.
+- Organizadas las guías por fundamentos, captación/ventas, marketing/contenido y herramientas.
 
-## Fase 4 — Sitemap y navegación
-- Corregidos enlaces internos rotos de guías hacia URLs existentes.
-- Limpieza de `sitemap.xml` eliminando URLs inexistentes.
+### Guías reescritas en profundidad
+- `guias/automatizar-negocio-con-ia/index.html`
+- `guias/automatizar-negocio-online/index.html`
+- `guias/automatizar-captacion-de-clientes/index.html`
+- `guias/automatizar-email-marketing/index.html`
+- `guias/automatizar-embudos-de-ventas/index.html`
+- `guias/automatizar-redes-sociales/index.html`
+- `guias/automatizar-ventas/index.html`
+- `guias/crm-para-pymes/index.html`
+- `guias/embudos-simples/index.html`
+- `guias/formularios-y-leads/index.html`
+- `guias/mejores-herramientas-de-automatizacion/index.html`
+- `guias/software-para-automatizar-negocios/index.html`
+- `guias/systeme-vs-mailchimp/index.html`
+- `guias/whatsapp-automatizado/index.html`
 
-## Fase 5 — Validación final
-### Archivos modificados
-- AUDITORIA_ADSENSE.md
-- guias/index.html
-- guias/*/index.html (múltiples guías)
-- legal/contacto.html
-- legal/privacidad.html
-- legal/cookies.html
-- sitemap.xml
+### Criterio aplicado en las reescrituras
+Cada guía se centra ahora en una intención concreta y prioriza:
+- explicación específica del problema;
+- proceso o método utilizable;
+- ejemplos prácticos;
+- criterios de decisión;
+- métricas;
+- errores y límites;
+- enlaces internos relacionados;
+- monetización secundaria o inexistente en el cuerpo editorial.
 
-### Problemas corregidos
-- Placeholders y textos en construcción.
-- Caracteres rotos/codificación visible.
-- Enlaces internos rotos más frecuentes en guías.
-- Páginas legales con formato incompleto o incoherente.
-- URLs inexistentes dentro del sitemap.
+Se han eliminado de las páginas reescritas los patrones repetitivos de Systeme.io, Hostinger, Pictory y otros bloques comerciales que antes aparecían entre múltiples secciones.
 
-### Problemas pendientes
-- Persisten guías con exceso estructural de bloques comerciales heredados (aunque saneadas en texto); recomendable una segunda iteración editorial por guía para mejorar profundidad y reducir módulos promocionales repetidos a 1 bloque definitivo.
-- Falta completar datos fiscales del responsable legal.
+## Páginas legales
+- Reescrita `legal/privacidad.html` para reflejar GA4, AdSense, consentimiento y enlaces externos sin cargar scripts publicitarios o analíticos en la propia página.
+- Reescrita `legal/cookies.html` para reflejar el estado actual de Google Analytics 4, Google AdSense y Consent Mode.
+- Simplificada `legal/contacto.html`, eliminando marcadores de datos pendientes visibles.
+- Simplificado `legal/aviso-legal.html` y eliminados scripts de seguimiento innecesarios.
+- `sitemap.xml` incluye privacidad, cookies, contacto, aviso legal, sobre nosotros y política editorial.
 
-### Páginas recomendadas para mantener en sitemap
-- Home, índice de guías, guías ya saneadas, páginas legales y `sistema-maestro-ia` si está finalizada.
+## CMP y Consent Mode
+- La home corregida ya no contiene los scripts Sirdata heredados.
+- El índice `guias/index.html` corregido ya no contiene los scripts Sirdata heredados.
+- Según la auditoría previa del repositorio, esas eran las ubicaciones detectadas para `consentframework.com`; debe realizarse una validación final de la rama antes del merge para confirmar que no queda coexistencia con Google CMP.
+- Consent Mode de publicidad y analítica está configurado desde AdSense según la validación realizada en cuenta.
 
-### Páginas que conviene no enviar todavía a AdSense si quedan débiles
-- Cualquier guía que todavía mantenga estructura repetitiva excesiva de afiliación frente a contenido editorial.
+## Estado editorial actual
+Las principales páginas indexables de contenido han sido reescritas o revisadas para que el contenido editorial sea claramente dominante frente a promoción o afiliación.
+
+## Pendientes antes del merge
+1. Validación final de la rama frente a `main`.
+2. Comprobar que no quedan placeholders, enlaces `#` relevantes, caracteres rotos ni scripts Sirdata en las páginas que se van a publicar.
+3. Verificar que `https://automatizatunegocio.org/ads.txt` responde correctamente después del despliegue.
+4. Verificar navegación, sitemap, páginas legales y carga de GA4/AdSense en producción.
+5. Comprobar de nuevo el mensaje CMP con el parámetro oficial de prueba de Google después del despliegue corregido.
+
+## Condición para reenvío a AdSense
+No solicitar una nueva revisión hasta que:
+1. la rama corregida se haya fusionado y desplegado;
+2. las páginas principales sean rastreables y navegables;
+3. `ads.txt` sea accesible públicamente;
+4. CMP/Consent Mode y carga de analítica/publicidad sean coherentes;
+5. se haya realizado una comprobación final de contenido y enlaces en producción.

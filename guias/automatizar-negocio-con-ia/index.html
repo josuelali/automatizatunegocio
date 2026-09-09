@@ -1,392 +1,54 @@
 <!doctype html>
 <html lang="es">
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Automatizar negocio con IA: qué es, para qué sirve y cómo empezar</title>
-  <meta name="description" content="Guía clara sobre automatizar negocio con IA: qué es, para qué sirve, errores comunes y cómo empezar paso a paso.">
+  <title>Cómo automatizar un negocio con IA: guía práctica paso a paso</title>
+  <meta name="description" content="Guía práctica para automatizar un negocio con IA: qué procesos elegir, cómo diseñar el flujo, qué datos necesitas, errores comunes y cuándo usar herramientas externas.">
   <link rel="canonical" href="https://automatizatunegocio.org/guias/automatizar-negocio-con-ia/">
-  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
   <link rel="stylesheet" href="/assets/css/styles.css">
-  <!-- Google tag (gtag.js) -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-H2QTH54RLR');
-  </script>
-  <script>
-    (function() {
-      function trackAutomatizatunegocioEvent(eventName, params) {
-        if (typeof gtag === 'function') {
-          gtag('event', eventName, Object.assign({
-            asset_name: 'automatizatunegocio',
-            page_url: window.location.href
-          }, params || {}));
-        }
-      }
-      window.addEventListener('click', function(event) {
-        var link = event.target && event.target.closest ? event.target.closest('a') : null;
-        if (!link) return;
-        var href = link.getAttribute('href') || '';
-        var text = (link.textContent || '').trim().slice(0, 120);
-        var isGuide = href.indexOf('/guias/') !== -1 || link.closest('article, .card, .guide-card');
-        var isOutbound = link.hostname && link.hostname !== window.location.hostname;
-        var isAffiliate = /amazon|amzn\.to|hostinger|pictory|systeme\.io|picodi/i.test(href);
-        if (isAffiliate) {
-          trackAutomatizatunegocioEvent('affiliate_click', { cta_text: text, destination_url: link.href, cta_location: 'link', merchant: link.hostname });
-        } else if (isOutbound) {
-          trackAutomatizatunegocioEvent('outbound_click', { cta_text: text, destination_url: link.href, cta_location: 'link' });
-        } else if (isGuide) {
-          trackAutomatizatunegocioEvent('guide_click', { cta_text: text, destination_url: link.href, cta_location: 'guide_link' });
-        } else if (href && href !== '#') {
-          trackAutomatizatunegocioEvent('cta_click', { cta_text: text, destination_url: link.href, cta_location: 'link' });
-        }
-      }, true);
-    })();
-  </script>
 </head>
-
 <body>
-
-  <header class="site-header">
-    <div class="header-container">
-
-        <a href="../../" class="logo-link" aria-label="AutomatizaTuNegocio">
-    <img src="../../assets/img/logo-header-auto.png" alt="AutomatizaTuNegocio" class="site-logo">
-  </a>
-
-  <nav class="main-nav" aria-label="Principal">
-    <a href="../../">Inicio</a>
-    <a href="../">Guías</a>
-    <a href="/guias/automatizar-negocio-con-ia/">Automatizar con IA</a>
-    <a href="/guias/mejores-herramientas-de-automatizacion/">Herramientas</a>
-    <a href="https://sistemamaestroia.com/" class="cta-system" target="_blank" rel="noopener noreferrer">
-      Crear mi sistema IA
-    </a>
-  </nav>
-
-</div>
-  </header>
-
-  <main class="article-page">
-
-<section class="article-hero">
-  <div class="article-shell">
-
-    <div class="article-hero-grid">
-
-      <div class="article-hero-copy">
-        <p class="section-kicker">Guías</p>
-        <h1>Automatizar negocio con IA: qué es, para qué sirve y cómo empezar</h1>
-
-        <p class="article-intro">Aprenda de forma simple qué es automatizar negocio con IA, para qué sirve, cómo aplicarlo en su proyecto y qué herramientas pueden ayudarle a empezar.</p>
-
-        <div class="article-meta">
-          <span>Actualizado: 2026</span>
-          <span>Lectura: 4 min</span>
-        </div>
-
-        <div class="bloque-afiliado top">
-          <p><strong>🚀 👉 Empieza gratis a automatizar tu negocio:</strong></p>
-          <ul>
-            <li>✅ Sin conocimientos técnicos</li>
-            <li>✅ Resultados desde el primer día</li>
-          </ul>
-          <a href="https://josuecabellorosa83.systeme.io/30a703c4" class="btn-afiliado" target="_blank" rel="noopener noreferrer sponsored nofollow">
-            Crear sistema automático ahora
-          </a>
-        </div>
-      </div>
-
-      <aside class="article-affiliate-card">
-        <span class="tool-badge">RECOMENDADA</span>
-        <h3>Systeme.io</h3>
-        <p>
-          Cree embudos, páginas, email marketing y automatizaciones
-          desde una sola plataforma sin complicaciones técnicas.
-        </p>
-        <ul class="mini-benefits">
-          <li>Embudos y captación</li>
-          <li>Email marketing</li>
-          <li>Automatizaciones</li>
-        </ul>
-        <a href="https://systeme.io/?sa=sa0265622982c7f37465c7b29f0138ab412c445b08" target="_blank" rel="noopener noreferrer sponsored nofollow" class="btn btn-primary">
-          Crear sistema automático ahora
-        </a>
-      </aside>
-
-    </div>
-
-    <div class="article-image-slot" style="margin-top:24px;">
-      <div class="image-placeholder">
-        <p>Imagen ilustrativa del flujo de trabajo automatizado para esta guía.</p>
-      </div>
-    </div>
-
+<header class="site-header" id="siteHeader">
+  <div class="header-container">
+    <a href="/" class="logo-link" aria-label="AutomatizaTuNegocio"><img src="/assets/img/logo-header-auto.png" alt="AutomatizaTuNegocio" class="site-logo"></a>
+    <nav class="main-nav" aria-label="Principal"><a href="/">Inicio</a><a href="/guias/">Guías</a><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/politica-editorial.html">Política editorial</a><a href="https://sistemamaestroia.com/" class="cta-system" target="_blank" rel="noopener noreferrer">Sistema Maestro IA</a></nav>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">☰</button>
   </div>
-</section>
+  <div class="mobile-panel" id="mobilePanel"><a href="/">Inicio</a><a href="/guias/">Guías</a><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/politica-editorial.html">Política editorial</a></div>
+</header>
 
-<section class="ecosystem-box">
-            <h3>Automatiza todo tu sistema</h3>
-            <p>
-              Si quieres crear tu propio sistema inteligente que automatice
-              captación, contenido y monetización, explora Master System IA.
-            </p>
-            <a href="https://sistemamaestroia.com" target="_blank" rel="noopener noreferrer">
-              Crear mi sistema automático
-            </a>
-          </section>
+<main class="article-page">
+<section class="article-hero"><div class="article-shell"><div class="article-hero-grid"><div class="article-hero-copy"><p class="section-kicker">GUÍA PRÁCTICA</p><h1>Cómo automatizar un negocio con IA paso a paso</h1><p class="article-intro">Automatizar con IA no significa poner un chatbot en todas partes. Significa detectar tareas repetitivas, definir qué datos entran, qué decisión debe tomarse y qué resultado debe producirse. Esta guía explica cómo hacerlo sin empezar por la herramienta.</p><div class="article-meta"><span>Actualizado: 09/09/2026</span><span>Lectura aproximada: 8 min</span></div></div><aside class="article-affiliate-card"><span class="tool-badge">IDEA CLAVE</span><h3>Empieza por un solo proceso</h3><p>El mejor primer caso de uso es repetitivo, fácil de medir y reversible si algo falla.</p><ul class="mini-benefits"><li>Pocas decisiones</li><li>Datos claros</li><li>Resultado verificable</li></ul></aside></div></div></section>
 
+<section class="article-layout"><div class="article-shell article-main-grid"><article class="article-content">
+<nav class="article-toc" aria-label="Índice del artículo"><h2>Índice</h2><a href="#que-significa">Qué significa automatizar con IA</a><a href="#procesos">Qué procesos elegir primero</a><a href="#mapa">Cómo diseñar el flujo</a><a href="#ejemplo">Ejemplo práctico</a><a href="#herramientas">Cuándo elegir herramienta</a><a href="#metricas">Cómo medir si funciona</a><a href="#errores">Errores frecuentes</a></nav>
 
-<section class="article-layout">
-  <div class="article-shell article-main-grid">
+<section id="que-significa" class="article-section"><h2>Qué significa automatizar un negocio con IA</h2><p>Una automatización útil conecta una entrada, una regla o decisión y una salida. La IA puede intervenir cuando la decisión no es puramente mecánica: clasificar un mensaje, resumir información, redactar una respuesta preliminar, detectar intención o extraer datos de texto.</p><p>El objetivo no es sustituir todas las tareas humanas. El objetivo es reducir trabajo repetitivo sin perder control, trazabilidad ni calidad.</p></section>
 
-    <article class="article-content">
+<section id="procesos" class="article-section"><h2>Qué procesos conviene automatizar primero</h2><p>Prioriza tareas que se repiten con frecuencia y cuyo resultado pueda comprobarse. Algunos buenos candidatos son:</p><ul><li>Clasificar formularios de contacto por tipo de consulta.</li><li>Crear un borrador de respuesta para preguntas frecuentes.</li><li>Asignar leads a una etapa de seguimiento según datos concretos.</li><li>Resumir reuniones, emails o incidencias y convertirlas en tareas.</li><li>Preparar contenido a partir de una estructura editorial ya definida.</li></ul><p>Evita empezar por procesos críticos que impliquen dinero, contratos, decisiones legales o envíos irreversibles sin revisión humana.</p></section>
 
-      <nav class="article-toc" aria-label="Índice del artículo">
-        <h2>Índice</h2>
-        <a href="#que-es">Qué es</a>
-        <a href="#para-que-sirve">Para qué sirve</a>
-        <a href="#ejemplos">Ejemplos prácticos</a>
-        <a href="#como-empezar">Cómo empezar</a>
-        <a href="#errores">Errores comunes</a>
-        <a href="#herramienta">Herramienta recomendada</a>
-        <a href="#recurso">Recurso recomendado</a>
-        <a href="#sistema">Automatiza todo tu sistema</a>
-      </nav>
+<section id="mapa" class="article-section"><h2>Cómo diseñar el flujo antes de elegir software</h2><div class="content-box example-box"><ol><li><strong>Define la entrada.</strong> Por ejemplo: un formulario, un email, una fila nueva en una hoja o una conversación.</li><li><strong>Define la decisión.</strong> Qué debe interpretar o comprobar el sistema.</li><li><strong>Define la salida.</strong> Qué debe ocurrir después: guardar datos, crear una tarea, generar un borrador o avisar a alguien.</li><li><strong>Define el control humano.</strong> En qué punto una persona revisa o aprueba.</li><li><strong>Define el registro.</strong> Guarda qué ocurrió, cuándo y con qué resultado para poder corregir errores.</li></ol></div></section>
 
-      <section id="que-es" class="article-section">
-        <h2>Qué es automatizar negocio con IA</h2>
-        <p>Automatizar negocio con IA consiste en utilizar herramientas, software o sistemas digitales para ejecutar procesos sin intervención manual constante.</p>
-        <p>Esto permite ahorrar tiempo, reducir errores y crear operaciones más ordenadas, escalables y rentables en proyectos digitales.</p>
-      </section>
+<section id="ejemplo" class="article-section"><h2>Ejemplo: automatizar la captación de un lead</h2><p>Supongamos que una pyme recibe solicitudes desde un formulario web. El flujo puede ser:</p><ol><li>El usuario envía nombre, email, empresa y motivo de contacto.</li><li>El sistema valida que los campos obligatorios estén completos.</li><li>La IA clasifica la intención: información, presupuesto, soporte u otra.</li><li>Los datos se guardan en el CRM con la categoría asignada.</li><li>Se genera un borrador de respuesta adaptado al tipo de consulta.</li><li>Una persona revisa el borrador antes de enviarlo si la consulta es comercial o sensible.</li></ol><p>La automatización aporta valor porque elimina clasificación manual y preparación inicial, pero mantiene control humano donde una respuesta equivocada podría afectar a la relación comercial.</p></section>
 
-      <section id="para-que-sirve" class="article-section">
-        <h2>Para qué sirve automatizar negocio con IA</h2>
-        <p>Automatizar negocio con IA sirve para automatizar tareas repetitivas, mejorar la organización y acelerar procesos de captación, ventas, contenido o productividad.</p>
-        <p>Su utilidad principal está en liberar tiempo operativo y permitir que el sistema funcione con menos trabajo manual.</p>
-      </section>
+<section id="herramientas" class="article-section"><h2>Cuándo elegir la herramienta</h2><p>Solo después de definir el flujo tiene sentido elegir software. Evalúa estas variables:</p><ul><li><strong>Integraciones:</strong> debe conectarse con los sistemas que ya usas.</li><li><strong>Mantenimiento:</strong> una automatización difícil de entender será difícil de corregir.</li><li><strong>Coste:</strong> compara el precio con el tiempo que realmente ahorra.</li><li><strong>Control:</strong> revisa permisos, registros y opciones para pausar el flujo.</li><li><strong>Privacidad:</strong> evita enviar datos sensibles a servicios que no necesitas.</li></ul><p>Herramientas de automatización, CRM o email pueden ser útiles, pero ninguna compensa un proceso mal definido.</p></section>
 
-      <section id="ejemplos" class="article-section">
-        <div class="content-box example-box">
-          <h2>Ejemplos prácticos</h2>
-          <ul>
-            <li>Enviar automáticamente una secuencia de bienvenida cuando un usuario deja su email.</li>
-            <li>Mover contactos a un CRM según el formulario que completan.</li>
-            <li>Mandar recordatorios automáticos por email o WhatsApp.</li>
-            <li>Crear embudos simples de captación y seguimiento sin programar.</li>
-          </ul>
-        </div>
-      </section>
+<section id="metricas" class="article-section"><h2>Cómo saber si la automatización funciona</h2><p>Mide antes y después. No basta con que el flujo “funcione”. Debe mejorar algo concreto. Algunas métricas útiles:</p><ul><li>Minutos ahorrados por tarea.</li><li>Porcentaje de casos que requieren corrección manual.</li><li>Tiempo medio de respuesta.</li><li>Número de errores o duplicados.</li><li>Coste mensual del sistema frente al ahorro generado.</li></ul><p>Si una automatización necesita demasiadas excepciones o revisiones, probablemente el proceso todavía no está suficientemente definido.</p></section>
 
-      <section id="como-empezar" class="article-section">
-        <h2>Cómo empezar paso a paso</h2>
-        <p>La mejor forma de empezar es elegir una tarea concreta, repetitiva y fácil de medir. Por ejemplo: captación de leads, envío de emails o seguimiento automático.</p>
-        <p>Después de validar ese primer flujo, puede ampliar el sistema sin aumentar complejidad innecesaria.</p>
-      </section>
+<section id="errores" class="article-section"><div class="content-box warning-box"><h2>Errores frecuentes</h2><ul><li>Automatizar todo a la vez.</li><li>Comprar herramientas antes de diseñar el proceso.</li><li>No definir qué pasa cuando la IA se equivoca.</li><li>No registrar resultados ni errores.</li><li>Usar IA para decisiones que requieren contexto humano o responsabilidad directa.</li><li>Medir actividad en lugar de resultados.</li></ul></div></section>
 
-      <section id="herramienta" class="article-section">
-        <div class="content-box tool-box-article">
-          <h2>Herramienta recomendada para empezar</h2>
-          <p>
-            Si quiere automatizar captación, emails, páginas y parte del seguimiento comercial
-            sin programar, una de las opciones más sencillas para empezar es Systeme.io.
-          </p>
-          <a href="https://systeme.io/?sa=sa0265622982c7f37465c7b29f0138ab412c445b08" target="_blank" rel="noopener noreferrer sponsored nofollow" class="btn btn-primary">
-            Crear sistema automático ahora
-          </a>
-        </div>
-      </section>
+<section class="article-section"><h2>Siguiente paso recomendado</h2><p>Elige una única tarea repetitiva de esta semana y escríbela como secuencia: entrada → decisión → acción → revisión. Si puedes explicarla con claridad, entonces ya puedes valorar qué herramienta necesita cada parte.</p><p>Para profundizar, consulta también <a href="/guias/automatizar-captacion-de-clientes/">automatización de captación</a>, <a href="/guias/formularios-y-leads/">formularios y leads</a> y <a href="/guias/crm-para-pymes/">CRM para pymes</a>.</p></section>
 
-      <section id="errores" class="article-section">
-        <div class="content-box warning-box">
-          <h2>Errores comunes</h2>
-          <ul>
-            <li>Intentar automatizar todo desde el primer día.</li>
-            <li>Elegir herramientas complejas para procesos simples.</li>
-            <li>No medir si la automatización realmente ahorra tiempo o mejora resultados.</li>
-            <li>Crear flujos demasiado largos y difíciles de mantener.</li>
-          </ul>
-        </div>
-      </section>
+<section class="article-section"><div class="content-box tool-box-article"><h2>Recurso opcional</h2><p>Si quieres trabajar con una estructura más amplia de asistentes y procesos, existe una guía propia sobre creación de un Hub de Asistentes IA. Es un recurso comercial opcional; no es necesario para aplicar los pasos de esta guía.</p><a href="https://go.hotmart.com/F105593695X" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver guía Hub de Asistentes IA</a></div></section>
+</article>
 
-      <section class="article-section">
-        <div class="bloque-herramientas">
-          <h2>Herramientas recomendadas</h2>
+<aside class="article-sidebar"><div class="sidebar-box"><h3>Ruta recomendada</h3><a href="/guias/">Todas las guías</a><a href="/guias/automatizar-captacion-de-clientes/">Captación</a><a href="/guias/formularios-y-leads/">Formularios y leads</a><a href="/guias/crm-para-pymes/">CRM para pymes</a></div><div class="sidebar-box"><h3>Criterio editorial</h3><p>El contenido debe ser útil incluso sin comprar ni contratar herramientas externas.</p><a href="/politica-editorial.html">Ver política editorial</a></div></aside>
+</div></section>
+</main>
 
-          <p><strong>Systeme.io</strong> — embudos + automatización</p>
-          <a href="https://systeme.io/?sa=sa0265622982c7f37465c7b29f0138ab412c445b08" target="_blank" rel="noopener noreferrer sponsored nofollow">Probar gratis</a>
-
-          <p><strong>Hostinger</strong> — crear web rápida en minutos</p>
-          <a href="https://www.hostinger.com/es?REFERRALCODE=DZOJOSUECS4D" target="_blank" rel="noopener noreferrer sponsored nofollow">Crear web rápida en minutos</a>
-
-          <p><strong>Pictory</strong> — vídeos automáticos</p>
-          <a href="https://pictory.ai?ref=joshue-cabello-rosa72" target="_blank" rel="noopener noreferrer sponsored nofollow">Crear vídeos</a>
-        </div>
-      </section>
-
-      <section id="recurso" class="article-section">
-        <div class="content-box amazon-box">
-          <h2>Recurso recomendado</h2>
-          <p>
-            Para entender mejor cómo funciona la automatización inteligente y cómo aplicarla
-            en su negocio, le recomendamos el libro "Automatización Inteligente".
-          <a href="https://www.amazon.es/?tag=vendeconia-21" target="_blank" rel="noopener noreferrer sponsored nofollow" class="btn btn-secondary">
-            Ver en Amazon
-          </a>
-        </div>
-      </section>
-
-      <section id="sistema" class="article-section">
-        <div class="content-box sistemamaestro-box">
-          <h2>Automatiza todo tu sistema</h2>
-          <p>
-            Si quiere crear su propio sistema inteligente que automatice captación,
-            contenido y monetización, explore Master System IA.
-          </p>
-          <a href="https://sistemamaestroia.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            Crear mi sistema automático
-          </a>
-        </div>
-      </section>
-
-      <section class="related-guides-section">
-        <h2>Guías relacionadas</h2>
-
-        <div class="related-guides-grid">
-          <a class="related-guide-card" href="/guias/automatizar-negocio-con-ia/">
-            <h3>Cómo automatizar un negocio con IA</h3>
-            <p>Guía práctica para aplicar automatización inteligente en procesos reales.</p>
-          </a>
-
-          <a class="related-guide-card" href="/guias/mejores-herramientas-de-automatizacion/">
-            <h3>Herramientas de automatización para empresas</h3>
-            <p>Opciones sencillas para empezar a automatizar sin complicarse.</p>
-          </a>
-
-          <a class="related-guide-card" href="../mejores-herramientas-de-automatizacion/">
-            <h3>Mejores herramientas de automatización</h3>
-            <p>Comparativa rápida de plataformas útiles para PYMES y negocios digitales.</p>
-          </a>
-        </div>
-      </section>
-
-    </article>
-
-    <aside class="article-sidebar">
-      <div class="sidebar-box">
-        <h3>Ruta recomendada</h3>
-        <a href="../">Ver todas las guías</a>
-        <a href="/guias/automatizar-negocio-con-ia/">Automatizar con IA</a>
-        <a href="/guias/mejores-herramientas-de-automatizacion/">Herramientas</a>
-      </div>
-
-      <div class="sidebar-box">
-        <h3>Acción rápida</h3>
-        <p>
-          Empiece por automatizar un proceso pequeño, medible y repetitivo.
-        </p>
-      </div>
-    </aside>
-
-  </div>
-</section>
-
-<div class="internal-links">
-  <h3>Guías recomendadas</h3>
-  <ul>
-    <li><a href="/guias/automatizar-negocio-con-ia/">Automatizar negocio con IA</a></li>
-    <li><a href="/guias/mejores-herramientas-de-automatizacion/">Herramientas de automatización</a></li>
-    <li><a href="../software-para-automatizar-negocios/">Software de automatización</a></li>
-  </ul>
-</div>
-
-<div class="bloque-final">
-  <h3>Automatiza todo tu negocio</h3>
-  <p>Si quieres pasar de contenido a ingresos reales:</p>
-  <a href="../../sistema-maestro-ia/" class="btn-principal">
-    Crear mi sistema completo
-  </a>
-</div>
-
-<div class="guias-relacionadas">
-  <h3>Guías recomendadas</h3>
-  <ul>
-    <li><a href="/guias/automatizar-negocio-con-ia/">Automatizar negocio con IA</a></li>
-    <li><a href="../mejores-herramientas-de-automatizacion/">Herramientas de automatización</a></li>
-    <li><a href="../software-para-automatizar-negocios/">Software de automatización</a></li>
-  </ul>
-</div>
-
-<div class="bloque-ctr-final">
-  <h3>Empieza ahora sin complicarte</h3>
-
-  <ul>
-    <li>Sin experiencia</li>
-    <li>Configuración en minutos</li>
-    <li>Resultados desde el primer día</li>
-  </ul>
-
-  <a href="https://systeme.io/?sa=sa0265622982c7f37465c7b29f0138ab412c445b08"
-     class="btn-afiliado"
-     target="_blank"
-     rel="noopener noreferrer sponsored nofollow">
-    Crear sistema automático ahora
-  </a>
-
-  <p style="font-size:13px;opacity:0.7;margin-top:8px;">
-    Empieza hoy — sin conocimientos técnicos
-  </p>
-</div>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-container">
-
-        <div class="footer-column">
-    <img src="../../assets/img/logo-header.png" alt="AutomatizaTuNegocio" style="max-width:180px;height:auto;">
-    <p>Automatización, IA y sistemas para generar ingresos online de forma escalable.</p>
-  </div>
-
-  <div class="footer-column">
-    <h3>Empieza aquí</h3>
-    <a href="../">Guías</a>
-    <a href="../../guias/automatizar-negocio-con-ia/">Guía principal</a>
-    <a href="../../guias/mejores-herramientas-de-automatizacion/">Herramientas</a>
-  </div>
-
-  <div class="footer-column">
-    <h3>Monetización</h3>
-    <a href="#">Email</a>
-    <a href="#">Marketing</a>
-  </div>
-
-  <div class="footer-column">
-    <h3>Sistema</h3>
-    <a href="#">Sistema Maestro IA</a>
-  </div>
-
-  <div class="footer-column">
-    <h3>Legal</h3>
-    <a href="../../legal/aviso-legal.html">Aviso legal</a>
-    <a href="../../legal/privacidad.html">Privacidad</a>
-    <a href="../../legal/cookies.html">Cookies</a>
-    <a href="../../legal/contacto.html">Contacto</a>
-  </div>
-
-</div>
-  </footer>
-
-  <script src="../../assets/js/site.js"></script>
+<footer class="footer"><div class="container footer-container"><div class="footer-column"><img src="/assets/img/logo-header-auto.png" alt="AutomatizaTuNegocio" style="max-width:180px;height:auto;"><p>Guías prácticas sobre automatización, IA y procesos digitales.</p></div><div class="footer-column"><h3>Contenido</h3><a href="/guias/">Guías</a><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/politica-editorial.html">Política editorial</a></div><div class="footer-column"><h3>Legal</h3><a href="/legal/aviso-legal.html">Aviso legal</a><a href="/legal/privacidad.html">Privacidad</a><a href="/legal/cookies.html">Cookies</a><a href="/legal/contacto.html">Contacto</a></div></div></footer>
+<script src="/assets/js/site.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
