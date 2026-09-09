@@ -1,5 +1,17 @@
+// Google AdSense tag. The published European Regulations message in AdSense uses this tag to load Google's CMP.
+(function () {
+  if (!document.querySelector('script[data-ad-client="ca-pub-9789327885520093"]')) {
+    var ads = document.createElement('script');
+    ads.async = true;
+    ads.crossOrigin = 'anonymous';
+    ads.dataset.adClient = 'ca-pub-9789327885520093';
+    ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9789327885520093';
+    document.head.appendChild(ads);
+  }
+}());
+
 document.addEventListener("DOMContentLoaded", function () {
-  // GA4 is loaded only after an affirmative analytics consent signal.
+  // GA4 is loaded only after an affirmative TCF analytics/storage consent signal.
   (function () {
     var loaded = false;
     function loadGA4() {
