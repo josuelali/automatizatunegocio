@@ -22,6 +22,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     window.addEventListener('consentGranted', function(e) { if (e.detail === 'analytics' || !e.detail) loadGA4(); });
   }());
+
+  // Keep the Sistema Maestro / Hub IA CTA visually prominent without changing the global stylesheet.
+  document.querySelectorAll('.main-nav > a.cta-system').forEach(function (cta) {
+    cta.style.background = 'linear-gradient(135deg,#ffcf33,#ff9f1a)';
+    cta.style.color = '#171006';
+    cta.style.fontWeight = '900';
+    cta.style.padding = '12px 20px';
+    cta.style.border = '1px solid rgba(255,220,90,0.75)';
+    cta.style.boxShadow = '0 0 0 1px rgba(255,184,75,0.18), 0 10px 28px rgba(255,174,0,0.38)';
+    cta.style.whiteSpace = 'nowrap';
+  });
+
   const mobileToggle = document.getElementById("mobileToggle");
   const mobilePanel = document.getElementById("mobilePanel");
 
