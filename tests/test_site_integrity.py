@@ -50,9 +50,10 @@ class SiteIntegrityTests(unittest.TestCase):
             for ref in parser.refs:
                 if not ref or ref.startswith(("#", "http:", "https:", "mailto:", "tel:", "data:", "//")):
                     continue
-                target = (ROOT / ref.lstrip("/")) if ref.startswith("/") else (page.parent / ref)
+                clean_ref = ref.split("?", 1)[0]
+                target = (ROOT / clean_ref.lstrip("/")) if clean_ref.startswith("/") else (page.parent / clean_ref)
                 target = target.resolve()
-                if ref.endswith("/"):
+                if clean_ref.endswith("/"):
                     target = target / "index.html"
                 if not target.exists():
                     missing.append((str(page.relative_to(ROOT)), ref))
