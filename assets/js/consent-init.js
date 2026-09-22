@@ -1,5 +1,5 @@
 // CORE: Google CMP + Consent Mode V2 in basic mode.
-// This file is loaded synchronously in <head>, before the AdSense/CMP tag.
+// Loaded synchronously in <head>, before the AdSense/CMP tag.
 (function () {
   'use strict';
   var measurementId = 'G-H2QTH54RLR';
@@ -35,19 +35,57 @@
     document.head.appendChild(script);
   }
 
-  function analyticsMayLoad(status) {
-    if (!status) return false;
-    // Google CMP enum: GRANTED=1, DENIED=2, NOT_APPLICABLE=3, NOT_CONFIGURED=4.
-    return status.analyticsStoragePurposeConsentStatus === 1 ||
-      status.analyticsStoragePurposeConsentStatus === 3;
+  function updateFromTcf(tcData, success) {
+    if (!success || !tcData) return;
+    if (tcData.eventStatus !== 'tcloaded' && tcData.eventStatus !== 'useractioncomplete') return;
+
+    if (tcData.gdprApplies === false) {
+      window.gtag('consent', 'update', {
+        analytics_storage: 'granted',
+        ad_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted'
+      });
+      loadGA4();
+      return;
+    }
+
+    var purposes = (tcData.purpose && tcData.purpose.consents) || {};
+    var vendors = (tcData.vendor && tcData.vendor.consents) || {};
+    var googleAllowed = vendors['755'] === true;
+    var purpose1 = purposes['1'] === true;
+    var analyticsAllowed = purpose1 && googleAllowed;
+    var adsAllowed = purpose1 && googleAllowed;
+    var personalizationAllowed = googleAllowed && purposes['3'] === true && purposes['4'] === true;
+
+    window.gtag('consent', 'update', {
+      analytics_storage: analyticsAllowed ? 'granted' : 'denied',
+      ad_storage: adsAllowed ? 'granted' : 'denied',
+      ad_user_data: adsAllowed ? 'granted' : 'denied',
+      ad_personalization: personalizationAllowed ? 'granted' : 'denied'
+    });
+    if (analyticsAllowed) loadGA4();
   }
 
-  // Official Privacy & Messaging callback: do not load GA4 until consent-mode
-  // data is ready. In the EEA, DENIED therefore leaves GA4 completely blocked.
+  // Primary path when Google Privacy & Messaging exposes Consent Mode data.
   window.googlefc.callbackQueue.push({
     CONSENT_MODE_DATA_READY: function () {
       if (typeof window.googlefc.getGoogleConsentModeValues !== 'function') return;
-      if (analyticsMayLoad(window.googlefc.getGoogleConsentModeValues())) loadGA4();
+      var status = window.googlefc.getGoogleConsentModeValues();
+      if (status && (status.analyticsStoragePurposeConsentStatus === 1 ||
+                     status.analyticsStoragePurposeConsentStatus === 3)) {
+        loadGA4();
+      }
+    }
+  });
+
+  // Safe TCF fallback. Google Privacy & Messaging officially exposes __tcfapi;
+  // this path also reacts when the visitor later changes the consent choice.
+  window.googlefc.callbackQueue.push({
+    CONSENT_API_READY: function () {
+      if (typeof window.__tcfapi === 'function') {
+        window.__tcfapi('addEventListener', 2.2, updateFromTcf);
+      }
     }
   });
 }());
