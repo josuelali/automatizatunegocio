@@ -1111,3 +1111,39 @@ h1{
   .categories-inner{gap:8px}
   .category-chip{flex:1 1 calc(50% - 8px);padding:9px 10px}
 }
+
+/* Featured guides: horizontal editorial cards */
+.featured-posts-section .post-grid{gap:14px}
+.featured-posts-section .post-card{
+  display:grid;grid-template-columns:42% 58%;min-height:230px;
+  background:linear-gradient(135deg,#071a2b 0%,#081425 100%);
+  border:1px solid rgba(86,143,184,.35);border-radius:12px;
+  box-shadow:inset 0 0 30px rgba(0,116,190,.035);overflow:hidden;
+}
+.featured-posts-section .post-card:hover{transform:translateY(-3px);border-color:rgba(33,169,255,.6)}
+.featured-posts-section .post-thumb{aspect-ratio:auto;height:100%;min-height:230px;background:#06111d}
+.featured-posts-section .post-thumb img{width:100%;height:100%;object-fit:cover;object-position:center}
+.featured-posts-section .post-body{padding:22px 20px 18px;display:flex;flex-direction:column;align-items:flex-start}
+.featured-posts-section .post-body h3{margin:10px 0 10px;font-size:20px;line-height:1.12}
+.featured-posts-section .post-body p{font-size:15px;line-height:1.5}
+.featured-posts-section .post-body::after{content:"Leer guía  →";margin-top:auto;padding-top:14px;color:#20b8ff;font-weight:800;font-size:14px}
+.featured-posts-section .post-tag{background:linear-gradient(135deg,#1689e9,#5d7cff);border:0;color:#fff}
+.featured-posts-section .post-card:nth-child(2) .post-tag{background:linear-gradient(135deg,#7352e8,#a14fff)}
+.featured-posts-section .post-card:nth-child(3) .post-tag{background:linear-gradient(135deg,#08a87e,#22d49a)}
+.featured-posts-section .post-card:nth-child(4) .post-tag{background:linear-gradient(135deg,#08a87e,#22d49a)}
+.featured-posts-section .post-card:nth-child(5) .post-tag{background:linear-gradient(135deg,#dc8500,#ffb13b)}
+.featured-posts-section .post-card:nth-child(6) .post-tag{background:linear-gradient(135deg,#0878d7,#25a7ff)}
+@media(max-width:760px){
+  .featured-posts-section .post-card{grid-template-columns:1fr;min-height:0}
+  .featured-posts-section .post-thumb{height:auto;min-height:0;aspect-ratio:16/9}
+  .featured-posts-section .post-body{padding:18px}
+}
+
+@media(min-width:761px){
+  .featured-posts-section .section-shell{max-width:1480px}
+  .featured-posts-section .post-card{min-height:218px}
+  .featured-posts-section .post-thumb{min-height:218px}
+  .featured-posts-section .post-body{padding:18px 16px 15px}
+  .featured-posts-section .post-body h3{font-size:18px}
+  .featured-posts-section .post-body p{font-size:14px;line-height:1.45}
+}
