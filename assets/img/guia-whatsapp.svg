@@ -1,9 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
-<title id="t">Atención automatizada</title><desc id="d">Ilustración editorial de AutomatizaTuNegocio: Atención automatizada</desc>
-<defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0b2230"/><stop offset="1" stop-color="#06141c"/></linearGradient></defs>
-<rect width="640" height="360" rx="28" fill="url(#g)"/><circle cx="520" cy="80" r="110" fill="#22c55e" opacity=".12"/><circle cx="110" cy="300" r="130" fill="#3b82f6" opacity=".12"/>
-<rect x="64" y="72" width="512" height="216" rx="24" fill="none" stroke="#7fb7cf" stroke-opacity=".35" stroke-width="2"/>
-<text x="320" y="178" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="72" font-weight="800">WA</text>
-<text x="320" y="225" text-anchor="middle" fill="#c7d9e2" font-family="Arial,sans-serif" font-size="24">Atención automatizada</text>
-<text x="320" y="326" text-anchor="middle" fill="#7fb7cf" font-family="Arial,sans-serif" font-size="16" letter-spacing="3">AUTOMATIZATUNEGOCIO</text>
+<title id="t">Mensajería automatizada</title><desc id="d">Ilustración genérica de conversación y automatización, sin logos de terceros</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071b28"/><stop offset="1" stop-color="#06121b"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#25d88a" stop-opacity=".28"/><stop offset="1" stop-color="#25d88a" stop-opacity="0"/></radialGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+<rect width="640" height="360" rx="28" fill="url(#bg)"/>
+<circle cx="320" cy="170" r="190" fill="url(#glow)"/>
+<g fill="none" stroke="#25d88a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+
+<path d="M152 112h214a28 28 0 0128 28v70a28 28 0 01-28 28H244l-62 42 16-42h-46a28 28 0 01-28-28v-70a28 28 0 0128-28z"/>
+<path d="M184 158h150M184 192h106"/>
+<circle cx="466" cy="194" r="58"/><path d="M438 194h56M466 166v56"/>
+<path d="M430 266c30 20 76 12 96-16"/><path d="M516 244l12 5-4 14"/>
+
+</g>
+<rect x="28" y="26" width="82" height="38" rx="19" fill="#25d88a" opacity=".16" stroke="#25d88a" stroke-width="2"/>
+<text x="48" y="52" fill="#25d88a" font-family="Arial,sans-serif" font-size="18" font-weight="800">CHAT</text>
+<text x="320" y="326" text-anchor="middle" fill="#b9d1dd" font-family="Arial,sans-serif" font-size="17">MENSAJERÍA + CONVERSACIÓN + AUTOMATIZACIÓN</text>
 </svg>
