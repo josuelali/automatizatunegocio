@@ -97,3 +97,16 @@ No solicitar una nueva revisión hasta que:
 3. `ads.txt` sea accesible públicamente;
 4. CMP/Consent Mode y carga de analítica/publicidad sean coherentes;
 5. se haya realizado una comprobación final de contenido y enlaces en producción.
+
+
+## Actualización técnica 22/09/2026 — corrección integral
+- CORE confirmó el repositorio canónico josuelali/automatizatunegocio, rama de producción main y proyecto Vercel automatizatunegocio.
+- Consent Mode V2 se inicializa ahora de forma síncrona en <head> antes de la etiqueta AdSense/CMP.
+- Los cuatro estados (analytics_storage, ad_storage, ad_user_data, ad_personalization) parten de denied.
+- GA4 G-H2QTH54RLR queda en modo básico: no se carga hasta que Google Privacy & Messaging publica datos de Consent Mode y analytics_storage está permitido o no resulta aplicable.
+- La etiqueta AdSense/CMP se carga explícitamente desde <head> en las páginas propias de AutomatizaTuNegocio.
+- Se añadió un acceso persistente a «Configurar cookies y privacidad» cuando la API de Google Privacy & Messaging está disponible.
+- Las seis categorías de la home tienen estructura flex, separación visual y foco de teclado.
+- Las seis tarjetas destacadas conservan destinos editoriales reales del sitio y sustituyen logos de otros proyectos por seis ilustraciones editoriales locales de AutomatizaTuNegocio.
+- sistema-maestro-ia/ no se modificó en esta intervención.
+- La solicitud de nueva revisión de AdSense queda expresamente fuera de esta intervención.

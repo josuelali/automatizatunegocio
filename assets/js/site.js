@@ -1,79 +1,3 @@
-// Consent Mode V2 defaults must exist before Google tags are requested.
-(function () {
-  var measurementId = 'G-H2QTH54RLR';
-  var publisherId = 'ca-pub-9789327885520093';
-  var gaLoaded = false;
-  var listenerAttached = false;
-  var attempts = 0;
-  var maxAttempts = 120;
-
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
-  window.gtag('consent', 'default', {
-    analytics_storage: 'denied',
-    ad_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied',
-    wait_for_update: 2000
-  });
-  window.gtag('set', 'ads_data_redaction', true);
-
-  function loadGA4() {
-    if (gaLoaded) return;
-    gaLoaded = true;
-    window.gtag('js', new Date());
-    window.gtag('config', measurementId, { send_page_view: true });
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
-    document.head.appendChild(script);
-  }
-
-  function updateConsent(tcData) {
-    if (!tcData || !tcData.purpose || !tcData.purpose.consents) return;
-    var purposes = tcData.purpose.consents;
-    var vendors = tcData.vendor && tcData.vendor.consents ? tcData.vendor.consents : {};
-    var googleAllowed = vendors['755'] === true;
-    var analyticsAllowed = purposes['1'] === true;
-    var adsAllowed = analyticsAllowed && googleAllowed;
-    var personalizationAllowed = adsAllowed && (purposes['3'] === true || purposes['4'] === true);
-
-    window.gtag('consent', 'update', {
-      analytics_storage: analyticsAllowed ? 'granted' : 'denied',
-      ad_storage: adsAllowed ? 'granted' : 'denied',
-      ad_user_data: adsAllowed ? 'granted' : 'denied',
-      ad_personalization: personalizationAllowed ? 'granted' : 'denied'
-    });
-    if (analyticsAllowed) loadGA4();
-  }
-
-  function attachTcfListener() {
-    if (listenerAttached) return;
-    if (typeof window.__tcfapi === 'function') {
-      listenerAttached = true;
-      window.__tcfapi('addEventListener', 2, function (tcData, success) {
-        if (success && (tcData.eventStatus === 'tcloaded' || tcData.eventStatus === 'useractioncomplete')) {
-          updateConsent(tcData);
-        }
-      });
-      return;
-    }
-    attempts += 1;
-    if (attempts < maxAttempts) window.setTimeout(attachTcfListener, 250);
-  }
-
-  // The published European Regulations message in AdSense is loaded by this tag.
-  if (!document.querySelector('script[data-ad-client="' + publisherId + '"]')) {
-    var ads = document.createElement('script');
-    ads.async = true;
-    ads.crossOrigin = 'anonymous';
-    ads.dataset.adClient = publisherId;
-    ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + publisherId;
-    document.head.appendChild(ads);
-  }
-  attachTcfListener();
-}());
-
 document.addEventListener("DOMContentLoaded", function () {
 
   // Keep the Sistema Maestro / Hub IA CTA visually prominent without changing the global stylesheet.
@@ -109,4 +33,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
   handleHeaderShadow();
   window.addEventListener("scroll", handleHeaderShadow);
+
+  // Give EEA visitors a persistent way to reopen Google Privacy & Messaging.
+  const legalColumn = document.querySelector('.site-footer .footer-col:last-child');
+  if (legalColumn && window.googlefc && Array.isArray(window.googlefc.callbackQueue)) {
+    window.googlefc.callbackQueue.push({
+      CONSENT_API_READY: function () {
+        if (document.getElementById('privacy-settings-link')) return;
+        const link = document.createElement('a');
+        link.id = 'privacy-settings-link';
+        link.href = '#';
+        link.textContent = 'Configurar cookies y privacidad';
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          window.googlefc.callbackQueue.push(window.googlefc.showRevocationMessage);
+        });
+        legalColumn.appendChild(link);
+      }
+    });
+  }
 });
