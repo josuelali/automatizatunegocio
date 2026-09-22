@@ -1,39 +1,80 @@
-// Google AdSense tag. The published European Regulations message in AdSense uses this tag to load Google's CMP.
+// Consent Mode V2 defaults must exist before Google tags are requested.
 (function () {
-  if (!document.querySelector('script[data-ad-client="ca-pub-9789327885520093"]')) {
+  var measurementId = 'G-H2QTH54RLR';
+  var publisherId = 'ca-pub-9789327885520093';
+  var gaLoaded = false;
+  var listenerAttached = false;
+  var attempts = 0;
+  var maxAttempts = 120;
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+  window.gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 2000
+  });
+  window.gtag('set', 'ads_data_redaction', true);
+
+  function loadGA4() {
+    if (gaLoaded) return;
+    gaLoaded = true;
+    window.gtag('js', new Date());
+    window.gtag('config', measurementId, { send_page_view: true });
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+    document.head.appendChild(script);
+  }
+
+  function updateConsent(tcData) {
+    if (!tcData || !tcData.purpose || !tcData.purpose.consents) return;
+    var purposes = tcData.purpose.consents;
+    var vendors = tcData.vendor && tcData.vendor.consents ? tcData.vendor.consents : {};
+    var googleAllowed = vendors['755'] === true;
+    var analyticsAllowed = purposes['1'] === true;
+    var adsAllowed = analyticsAllowed && googleAllowed;
+    var personalizationAllowed = adsAllowed && (purposes['3'] === true || purposes['4'] === true);
+
+    window.gtag('consent', 'update', {
+      analytics_storage: analyticsAllowed ? 'granted' : 'denied',
+      ad_storage: adsAllowed ? 'granted' : 'denied',
+      ad_user_data: adsAllowed ? 'granted' : 'denied',
+      ad_personalization: personalizationAllowed ? 'granted' : 'denied'
+    });
+    if (analyticsAllowed) loadGA4();
+  }
+
+  function attachTcfListener() {
+    if (listenerAttached) return;
+    if (typeof window.__tcfapi === 'function') {
+      listenerAttached = true;
+      window.__tcfapi('addEventListener', 2, function (tcData, success) {
+        if (success && (tcData.eventStatus === 'tcloaded' || tcData.eventStatus === 'useractioncomplete')) {
+          updateConsent(tcData);
+        }
+      });
+      return;
+    }
+    attempts += 1;
+    if (attempts < maxAttempts) window.setTimeout(attachTcfListener, 250);
+  }
+
+  // The published European Regulations message in AdSense is loaded by this tag.
+  if (!document.querySelector('script[data-ad-client="' + publisherId + '"]')) {
     var ads = document.createElement('script');
     ads.async = true;
     ads.crossOrigin = 'anonymous';
-    ads.dataset.adClient = 'ca-pub-9789327885520093';
-    ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9789327885520093';
+    ads.dataset.adClient = publisherId;
+    ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + publisherId;
     document.head.appendChild(ads);
   }
+  attachTcfListener();
 }());
 
 document.addEventListener("DOMContentLoaded", function () {
-  // GA4 is loaded only after an affirmative TCF analytics/storage consent signal.
-  (function () {
-    var loaded = false;
-    function loadGA4() {
-      if (loaded) return;
-      loaded = true;
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function(){ window.dataLayer.push(arguments); };
-      window.gtag('js', new Date());
-      window.gtag('config', 'G-H2QTH54RLR');
-      var s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-H2QTH54RLR';
-      document.head.appendChild(s);
-    }
-    function inspectConsent(tcData) {
-      if (tcData && tcData.eventStatus && tcData.purpose && tcData.purpose.consents && tcData.purpose.consents['1']) loadGA4();
-    }
-    if (typeof window.__tcfapi === 'function') {
-      window.__tcfapi('addEventListener', 2, function(tcData, success) { if (success) inspectConsent(tcData); });
-    }
-    window.addEventListener('consentGranted', function(e) { if (e.detail === 'analytics' || !e.detail) loadGA4(); });
-  }());
 
   // Keep the Sistema Maestro / Hub IA CTA visually prominent without changing the global stylesheet.
   document.querySelectorAll('.main-nav > a.cta-system').forEach(function (cta) {
