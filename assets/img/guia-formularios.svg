@@ -1,22 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
-<title id="t">Formularios y leads</title><desc id="d">Ilustración de formulario, datos y registro de contactos</desc>
-<defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071b28"/><stop offset="1" stop-color="#06121b"/></linearGradient>
- <radialGradient id="glow"><stop stop-color="#ffb13b" stop-opacity=".28"/><stop offset="1" stop-color="#ffb13b" stop-opacity="0"/></radialGradient>
- <filter id="shadow"><feGaussianBlur stdDeviation="10"/></filter>
-</defs>
-<rect width="640" height="360" rx="28" fill="url(#bg)"/>
-<circle cx="320" cy="170" r="190" fill="url(#glow)"/>
-<g fill="none" stroke="#ffb13b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360"><title>Formularios y leads</title>
+<defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#07182b"/><stop offset="1" stop-color="#030914"/></linearGradient>
+<radialGradient id="g"><stop stop-color="#ff9f1a" stop-opacity=".35"/><stop offset="1" stop-color="#ff9f1a" stop-opacity="0"/></radialGradient>
+<linearGradient id="a" x2="1" y2="1"><stop stop-color="#ffd174"/><stop offset="1" stop-color="#ff9f1a"/></linearGradient>
+<filter id="s"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="640" height="360" rx="26" fill="url(#b)"/><ellipse cx="320" cy="190" rx="260" ry="165" fill="url(#g)"/>
 
-<rect x="176" y="72" width="286" height="224" rx="20"/>
-<path d="M216 122h112M216 166h206M216 210h206"/>
-<rect x="216" y="244" width="112" height="24" rx="12"/>
-<circle cx="398" cy="116" r="22"/><path d="M384 144c10-10 30-10 40 0"/>
-<path d="M480 112h42M501 91v42"/>
-
-</g>
-<rect x="28" y="26" width="82" height="38" rx="19" fill="#ffb13b" opacity=".16" stroke="#ffb13b" stroke-width="2"/>
-<text x="48" y="52" fill="#ffb13b" font-family="Arial,sans-serif" font-size="18" font-weight="800">FORM</text>
-<text x="320" y="326" text-anchor="middle" fill="#b9d1dd" font-family="Arial,sans-serif" font-size="17">FORMULARIOS + DATOS + REGISTRO</text>
+<g filter="url(#s)" opacity=".35"><rect x="175" y="60" width="290" height="245" rx="22" fill="#ff9f1a"/></g>
+<rect x="160" y="50" width="300" height="250" rx="22" fill="#1f1b1a" stroke="#ffad32" stroke-width="5"/>
+<rect x="195" y="95" width="125" height="13" rx="6" fill="#ffb342"/><rect x="195" y="135" width="225" height="12" rx="6" fill="#dba03d"/><rect x="195" y="170" width="225" height="12" rx="6" fill="#dba03d"/>
+<rect x="195" y="220" width="105" height="32" rx="16" fill="#ffad32"/>
+<circle cx="380" cy="94" r="28" fill="#2d251f" stroke="#ffb342" stroke-width="5"/><path d="M355 132q25-25 50 0" stroke="#ffb342" stroke-width="5" fill="none"/>
+<g fill="#ffad32"><circle cx="112" cy="120" r="22"/><circle cx="112" cy="190" r="22"/><circle cx="112" cy="260" r="22"/></g>
+<path d="M100 128q12-14 24 0M100 198q12-14 24 0M100 268q12-14 24 0" stroke="#fff1cf" stroke-width="4" fill="none"/>
+<circle cx="505" cy="245" r="34" fill="#ff9f1a"/><path d="M486 245h38M505 226v38" stroke="#fff3d7" stroke-width="6"/>
 </svg>

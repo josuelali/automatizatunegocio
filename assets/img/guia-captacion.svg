@@ -1,21 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
-<title id="t">Captación de clientes</title><desc id="d">Ilustración de leads entrando en un embudo de captación</desc>
-<defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071b28"/><stop offset="1" stop-color="#06121b"/></linearGradient>
- <radialGradient id="glow"><stop stop-color="#28d99a" stop-opacity=".28"/><stop offset="1" stop-color="#28d99a" stop-opacity="0"/></radialGradient>
- <filter id="shadow"><feGaussianBlur stdDeviation="10"/></filter>
-</defs>
-<rect width="640" height="360" rx="28" fill="url(#bg)"/>
-<circle cx="320" cy="170" r="190" fill="url(#glow)"/>
-<g fill="none" stroke="#28d99a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360"><title>Captación de clientes</title>
+<defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#07182b"/><stop offset="1" stop-color="#030914"/></linearGradient>
+<radialGradient id="g"><stop stop-color="#00cfa4" stop-opacity=".35"/><stop offset="1" stop-color="#00cfa4" stop-opacity="0"/></radialGradient>
+<linearGradient id="a" x2="1" y2="1"><stop stop-color="#72ffd9"/><stop offset="1" stop-color="#00cfa4"/></linearGradient>
+<filter id="s"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="640" height="360" rx="26" fill="url(#b)"/><ellipse cx="320" cy="190" rx="260" ry="165" fill="url(#g)"/>
 
-<circle cx="212" cy="96" r="20"/><circle cx="320" cy="78" r="20"/><circle cx="428" cy="96" r="20"/>
-<path d="M180 132h280l-94 92v50h-92v-50z"/>
-<path d="M256 132l64 64 64-64"/><circle cx="320" cy="244" r="16" fill="#28d99a" opacity=".22"/>
-<path d="M210 294h220M236 294v-30M278 294v-48M362 294v-68M404 294v-92"/>
-
-</g>
-<rect x="28" y="26" width="82" height="38" rx="19" fill="#28d99a" opacity=".16" stroke="#28d99a" stroke-width="2"/>
-<text x="48" y="52" fill="#28d99a" font-family="Arial,sans-serif" font-size="18" font-weight="800">LEADS</text>
-<text x="320" y="326" text-anchor="middle" fill="#b9d1dd" font-family="Arial,sans-serif" font-size="17">LEADS + EMBUDO + CLIENTES</text>
+<g fill="#0d433d" stroke="#36e5bd" stroke-width="5"><circle cx="210" cy="78" r="28"/><circle cx="320" cy="58" r="28"/><circle cx="430" cy="78" r="28"/></g>
+<g stroke="#23dfb3" stroke-width="7" fill="url(#a)" fill-opacity=".25"><path d="M145 120h350L375 238v72H265v-72z"/></g>
+<path d="M195 120l125 120 125-120" stroke="#74ffe0" stroke-width="6" fill="none"/>
+<circle cx="320" cy="268" r="23" fill="#17d9ad"/><g fill="#55f0c9"><rect x="455" y="250" width="24" height="60" rx="5"/><rect x="492" y="220" width="24" height="90" rx="5"/><rect x="529" y="180" width="24" height="130" rx="5"/></g>
+<path d="M450 210l42-28 35-42" stroke="#55f0c9" stroke-width="5" fill="none"/><path d="M520 142l14-8-2 16" stroke="#55f0c9" stroke-width="5" fill="none"/>
 </svg>

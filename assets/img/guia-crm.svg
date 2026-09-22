@@ -1,23 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
-<title id="t">CRM para pymes</title><desc id="d">Ilustración de pipeline comercial y seguimiento de clientes</desc>
-<defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071b28"/><stop offset="1" stop-color="#06121b"/></linearGradient>
- <radialGradient id="glow"><stop stop-color="#4c91ff" stop-opacity=".28"/><stop offset="1" stop-color="#4c91ff" stop-opacity="0"/></radialGradient>
- <filter id="shadow"><feGaussianBlur stdDeviation="10"/></filter>
-</defs>
-<rect width="640" height="360" rx="28" fill="url(#bg)"/>
-<circle cx="320" cy="170" r="190" fill="url(#glow)"/>
-<g fill="none" stroke="#4c91ff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360"><title>CRM para pymes</title>
+<defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#07182b"/><stop offset="1" stop-color="#030914"/></linearGradient>
+<radialGradient id="g"><stop stop-color="#168cff" stop-opacity=".35"/><stop offset="1" stop-color="#168cff" stop-opacity="0"/></radialGradient>
+<linearGradient id="a" x2="1" y2="1"><stop stop-color="#82bdff"/><stop offset="1" stop-color="#168cff"/></linearGradient>
+<filter id="s"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="640" height="360" rx="26" fill="url(#b)"/><ellipse cx="320" cy="190" rx="260" ry="165" fill="url(#g)"/>
 
-<rect x="106" y="90" width="428" height="188" rx="18"/>
-<path d="M248 90v188M390 90v188"/>
-<rect x="132" y="126" width="90" height="38" rx="10"/><rect x="274" y="150" width="90" height="38" rx="10"/><rect x="416" y="122" width="90" height="38" rx="10"/>
-<circle cx="150" cy="145" r="7"/><circle cx="292" cy="169" r="7"/><circle cx="434" cy="141" r="7"/>
-<path d="M222 145h26M364 169h26"/><path d="M238 135l10 10-10 10M380 159l10 10-10 10"/>
-<path d="M132 222h66M274 222h66M416 222h66"/>
-
-</g>
-<rect x="28" y="26" width="82" height="38" rx="19" fill="#4c91ff" opacity=".16" stroke="#4c91ff" stroke-width="2"/>
-<text x="48" y="52" fill="#4c91ff" font-family="Arial,sans-serif" font-size="18" font-weight="800">CRM</text>
-<text x="320" y="326" text-anchor="middle" fill="#b9d1dd" font-family="Arial,sans-serif" font-size="17">CLIENTES + PIPELINE + SEGUIMIENTO</text>
+<rect x="95" y="70" width="450" height="235" rx="22" fill="#0b1e3b" stroke="#258fff" stroke-width="5"/>
+<path d="M245 70v235M395 70v235" stroke="#258fff" stroke-width="4"/>
+<g fill="#183c72" stroke="#55a8ff" stroke-width="3"><rect x="120" y="110" width="100" height="42" rx="10"/><rect x="270" y="145" width="100" height="42" rx="10"/><rect x="420" y="105" width="100" height="42" rx="10"/></g>
+<g fill="#6bb5ff"><circle cx="140" cy="131" r="9"/><circle cx="290" cy="166" r="9"/><circle cx="440" cy="126" r="9"/></g>
+<path d="M220 131h25M370 166h25" stroke="#55a8ff" stroke-width="7"/><path d="M235 120l12 11-12 11M385 155l12 11-12 11" stroke="#55a8ff" stroke-width="5" fill="none"/>
+<g stroke-linecap="round" stroke-width="7"><path d="M125 220h80" stroke="#53a8ff"/><path d="M275 220h65" stroke="#53a8ff"/><path d="M425 220h75" stroke="#53a8ff"/></g>
+<g fill="#43d7a2"><rect x="130" y="252" width="42" height="16" rx="8"/><rect x="280" y="252" width="42" height="16" rx="8"/></g><rect x="430" y="252" width="42" height="16" rx="8" fill="#ffbe42"/>
 </svg>

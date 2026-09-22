@@ -1,21 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
-<title id="t">Mensajería automatizada</title><desc id="d">Ilustración genérica de conversación y automatización, sin logos de terceros</desc>
-<defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071b28"/><stop offset="1" stop-color="#06121b"/></linearGradient>
- <radialGradient id="glow"><stop stop-color="#25d88a" stop-opacity=".28"/><stop offset="1" stop-color="#25d88a" stop-opacity="0"/></radialGradient>
- <filter id="shadow"><feGaussianBlur stdDeviation="10"/></filter>
-</defs>
-<rect width="640" height="360" rx="28" fill="url(#bg)"/>
-<circle cx="320" cy="170" r="190" fill="url(#glow)"/>
-<g fill="none" stroke="#25d88a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360"><title>Mensajería automatizada</title>
+<defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#07182b"/><stop offset="1" stop-color="#030914"/></linearGradient>
+<radialGradient id="g"><stop stop-color="#00cf91" stop-opacity=".35"/><stop offset="1" stop-color="#00cf91" stop-opacity="0"/></radialGradient>
+<linearGradient id="a" x2="1" y2="1"><stop stop-color="#6effca"/><stop offset="1" stop-color="#00cf91"/></linearGradient>
+<filter id="s"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="640" height="360" rx="26" fill="url(#b)"/><ellipse cx="320" cy="190" rx="260" ry="165" fill="url(#g)"/>
 
-<path d="M152 112h214a28 28 0 0128 28v70a28 28 0 01-28 28H244l-62 42 16-42h-46a28 28 0 01-28-28v-70a28 28 0 0128-28z"/>
-<path d="M184 158h150M184 192h106"/>
-<circle cx="466" cy="194" r="58"/><path d="M438 194h56M466 166v56"/>
-<path d="M430 266c30 20 76 12 96-16"/><path d="M516 244l12 5-4 14"/>
-
-</g>
-<rect x="28" y="26" width="82" height="38" rx="19" fill="#25d88a" opacity=".16" stroke="#25d88a" stroke-width="2"/>
-<text x="48" y="52" fill="#25d88a" font-family="Arial,sans-serif" font-size="18" font-weight="800">CHAT</text>
-<text x="320" y="326" text-anchor="middle" fill="#b9d1dd" font-family="Arial,sans-serif" font-size="17">MENSAJERÍA + CONVERSACIÓN + AUTOMATIZACIÓN</text>
+<rect x="105" y="62" width="205" height="250" rx="30" fill="#082c32" stroke="#20e3ac" stroke-width="6"/>
+<rect x="125" y="92" width="165" height="165" rx="18" fill="#0a1725"/><path d="M150 130h110M150 165h75" stroke="#48efbd" stroke-width="8" stroke-linecap="round"/>
+<path d="M150 210h90l-28 28v-15h-62z" fill="#18dca4"/>
+<g transform="translate(330 130)"><circle cx="85" cy="70" r="68" fill="#142940" stroke="#51dfff" stroke-width="5"/><rect x="40" y="45" width="90" height="60" rx="30" fill="#d7f7ff"/><circle cx="68" cy="74" r="9" fill="#168cff"/><circle cx="102" cy="74" r="9" fill="#168cff"/><path d="M70 96q15 10 30 0" stroke="#168cff" stroke-width="4" fill="none"/><path d="M85 22v20" stroke="#51dfff" stroke-width="5"/><circle cx="85" cy="15" r="8" fill="#51dfff"/></g>
+<g fill="#12d99f"><rect x="360" y="265" width="150" height="50" rx="18"/><path d="M390 290h85" stroke="#d5fff3" stroke-width="6" stroke-linecap="round"/></g>
 </svg>
