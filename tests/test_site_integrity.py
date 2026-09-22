@@ -29,6 +29,7 @@ class SiteIntegrityTests(unittest.TestCase):
         for key in ("analytics_storage", "ad_storage", "ad_user_data", "ad_personalization"):
             self.assertIn(key + ": 'denied'", js)
         self.assertIn("CONSENT_MODE_DATA_READY", js)
+        self.assertIn("gtag_enable_tcf_support = true", js)
         self.assertIn("G-H2QTH54RLR", js)
 
     def test_google_order_on_atn_pages(self):

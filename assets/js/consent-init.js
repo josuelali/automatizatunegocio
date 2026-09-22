@@ -5,6 +5,8 @@
   var measurementId = 'G-H2QTH54RLR';
   var gaLoaded = false;
 
+  // Enable Google's native IAB TCF -> Consent Mode mapping before any gtag call.
+  window.gtag_enable_tcf_support = true;
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
   window.googlefc = window.googlefc || {};
