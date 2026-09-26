@@ -1,5 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  function trackCommercialEvent(name, link) {
+    var payload = {
+      link_url: link && link.href ? link.href : undefined,
+      link_text: link && link.textContent ? link.textContent.trim() : undefined
+    };
+    if (typeof window.gtag === "function") {
+      window.gtag("event", name, payload);
+    }
+  }
+
+  document.querySelectorAll("a.commercial-cta").forEach(function (link) {
+    link.addEventListener("click", function () {
+      trackCommercialEvent("commercial_cta_click", link);
+    });
+  });
+
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function (link) {
+    link.addEventListener("click", function () {
+      trackCommercialEvent("contact_email_click", link);
+    });
+  });
+
   // Keep the Sistema Maestro / Hub IA CTA visually prominent without changing the global stylesheet.
   document.querySelectorAll('.main-nav > a.cta-system').forEach(function (cta) {
     cta.style.background = 'linear-gradient(135deg,#ffcf33,#ff9f1a)';
