@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/sistema-maestro-ia/:path*",
+      "destination": "https://sistemamaestroia.com/:path*",
+      "permanent": true
+    }
+  ]
+}

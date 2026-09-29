@@ -110,12 +110,6 @@
   </url>
 
   <url>
-    <loc>https://automatizatunegocio.org/sistema-maestro-ia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://automatizatunegocio.org/legal/aviso-legal.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
@@ -140,4 +134,10 @@
   </url>
 
   <url><loc>https://automatizatunegocio.org/casos-reales.html</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <url>
+    <loc>https://automatizatunegocio.org/herramientas/matriz-automatizacion/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
