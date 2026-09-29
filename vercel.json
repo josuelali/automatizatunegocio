@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/sistema-maestro-ia",
+      "destination": "https://sistemamaestroia.com/",
+      "permanent": true
+    },
+    {
       "source": "/sistema-maestro-ia/:path*",
       "destination": "https://sistemamaestroia.com/:path*",
       "permanent": true
