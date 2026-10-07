@@ -37,8 +37,20 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobilePanel = document.getElementById("mobilePanel");
 
   if (mobileToggle && mobilePanel) {
+    mobileToggle.setAttribute('aria-controls', 'mobilePanel');
+    mobileToggle.setAttribute('aria-expanded', 'false');
     mobileToggle.addEventListener("click", function () {
-      mobilePanel.classList.toggle("is-open");
+      const open = mobilePanel.classList.toggle("is-open");
+      mobileToggle.setAttribute('aria-expanded', String(open));
+      mobileToggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && mobilePanel.classList.contains('is-open')) {
+        mobilePanel.classList.remove('is-open');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+        mobileToggle.setAttribute('aria-label', 'Abrir menú');
+        mobileToggle.focus();
+      }
     });
   }
 

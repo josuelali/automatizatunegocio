@@ -15,6 +15,18 @@ class Refs(HTMLParser):
                 self.refs.append(values[key])
 
 class SiteIntegrityTests(unittest.TestCase):
+    def test_every_editorial_guide_has_mobile_navigation(self):
+        for page in (ROOT / 'guias').rglob('index.html'):
+            html = page.read_text(encoding='utf-8')
+            self.assertIn('id="mobileToggle"', html, page)
+            self.assertIn('id="mobilePanel"', html, page)
+            self.assertIn('/assets/js/site.js', html, page)
+
+    def test_mobile_navigation_exposes_expansion_and_escape(self):
+        js = (ROOT / 'assets' / 'js' / 'site.js').read_text(encoding='utf-8')
+        self.assertIn("setAttribute('aria-expanded', String(open))", js)
+        self.assertIn("event.key === 'Escape'", js)
+
     def test_home_has_six_real_editorial_cards(self):
         home = (ROOT / "index.html").read_text(encoding="utf-8")
         self.assertEqual(home.count('class="post-card"'), 6)
